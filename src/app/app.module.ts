@@ -18,6 +18,7 @@ import { FarmerWelcomeComponent } from './farmer-welcome/farmer-welcome.componen
 import { FormsModule } from '@angular/forms';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { InsuranceComponent } from './insurance/insurance.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {  HttpClientModule } from '@angular/common/http';
     BidderWelcomeComponent,
     FarmerWelcomeComponent,
     SellRequestComponent,
+    InsuranceComponent,
    
   ],
   imports: [

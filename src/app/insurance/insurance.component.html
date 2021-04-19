@@ -1,0 +1,56 @@
+<div class="main">
+
+<div class="start">
+    <div class="inner">
+        <h2 align="center">Apply for Insurance</h2>
+    </div>
+    <form #form1="ngForm" (ngSubmit)="calculate(form1)">
+        <div align="center" class="container1">
+            <div class="input1">
+                <label><b>Crop Name : </b></label>
+                <input class="t1" name="cropName" type="text" required [(ngModel)]="insurance.cropName" #name="ngModel"><br/>
+                <div *ngIf="form1.submitted && name.invalid">
+                    <div class="error" *ngIf="name.errors.required">
+                        Crop name is required.
+                    </div>
+                </div>
+                
+                <label><b>Area (in hectares) : </b></label>
+                <input class="t1" name="area" type="number" required [(ngModel)]="insurance.area" #area="ngModel"><br/>
+                <div *ngIf="form1.submitted && area.invalid">
+                    <div class="error" *ngIf="area.errors.required">
+                        Area value is required.
+                    </div>
+                </div>
+
+                <label><b>Season : </b></label>
+                <input class="t1" name="season" type="text" required [(ngModel)]="insurance.season" #season="ngModel"><br/>
+                <div *ngIf="form1.submitted && season.invalid">
+                    <div class="error" *ngIf="season.errors.required">
+                        Season is required.
+                    </div>
+                </div>
+
+                <label><b>Year : </b></label>
+                <input class="t1" name="year" type="date" required [(ngModel)]="insurance.year" #year="ngModel"><br/>
+                <div *ngIf="form1.submitted && year.invalid">
+                    <div class="error" *ngIf="year.errors.required">
+                        Year is required.
+                    </div>
+                </div>
+
+                <div class="button1">
+                    <button type="submit" class="request">Calculate</button>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+    <div>
+        {{ sample }}
+    </div>
+</div>
+
+</div>
