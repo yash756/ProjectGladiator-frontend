@@ -35,7 +35,7 @@
                 <input class="t1" name="year" type="date" required [(ngModel)]="insurance.year" #year="ngModel"><br/>
                 <div *ngIf="form1.submitted && year.invalid">
                     <div class="error" *ngIf="year.errors.required">
-                        Year is required.
+                        Year is required
                     </div>
                 </div>
 
