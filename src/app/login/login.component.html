@@ -1,0 +1,81 @@
+ <div class="main">
+    <div class="space"></div>
+    <div id="form">
+        <form>
+            <label ><b>Email id</b></label> <br/>
+            <input  id="emailid" name="email" class="inputText" required email [(ngModel)]="login.email"  /><br/><br/>
+
+            <label ><b>Password</b></label><br/>
+            <input id="password" type="password" name="pass" class="inputText" required [(ngModel)]="login.password" /><br/><br/>
+                
+            <button (click)='loginCheck()'>Login</button>
+            <!-- <input type="button" value="Login" (click)='login()'> -->
+       </form> 
+<!--                                                -->
+        <!-- <div *ngIf="check">
+            {{message}}
+        </div> -->
+
+        <!-- <div id="signup"> <a [routerLink]="'/farmerregistration'" >Are you new here? </a> </div>
+    
+        <div  *ngIf = "invalid">
+            <div class="error" *ngIf="email.invalid && (email.dirty || email.touched)">
+                You need to enter an email
+            </div>
+            <div class="error" *ngIf="pass.invalid && (pass.dirty || pass.touched)">
+                Please enter password to login
+            </div> 
+        </div> -->   
+   
+    </div>
+</div> 
+
+<!-- ---------------------------------------------------------------------------  
+
+
+
+
+
+
+
+-->
+<!--
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+-->
+    <!--  <link rel="stylesheet" type="text/css"  /> -->
+<!--    
+</head>
+    <body>
+        <div class="space"></div>
+        <div class="container">
+        <section id="content">
+            <form >
+            
+            <div>
+                <input type="text" placeholder="Email ID" required="" id="email" email [(ngModel)]="email" />
+            </div>
+            <div>
+                <input type="password" placeholder="Password" required="" id="password" [(ngModel)]="password" />
+            </div>
+            <div class="submit">
+            -->
+               
+                <!-- <input  type="submit" value="Log in" /> -->
+                <!--
+                <button (click)='login()'>Login</button>
+                -->
+                <!-- <button (click)='login()' class="w3-button w3-khaki" >Login</button> -->
+                <!-- <a href="#">Lost your password?</a>
+                <a href="#">Register</a> -->
+            <!--    
+            </div>
+            <div></div>
+            </form>
+            
+        </section>
+        </div>
+    </body>
+-->
+  

@@ -1,0 +1,20 @@
+span{
+    font-size:large;
+}
+
+.main{
+    background-color: lightgrey; 
+    outline: 2px solid;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 450px;
+    width: 1370px;
+    margin-left: 6em;
+    margin-top: 50;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.top{
+    padding-top: 90px;
+}

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'schemes-for-farmers'`, () => {
+  it(`should have as title 'Scm-Farmer-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('schemes-for-farmers');
+    expect(app.title).toEqual('Scm-Farmer-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('schemes-for-farmers app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Scm-Farmer-app app is running!');
   });
 });
