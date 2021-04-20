@@ -20,7 +20,7 @@ export class InsuranceComponent implements OnInit {
 
   calculate(f:NgForm) {
     this.service.calculateInsurance(this.insurance).subscribe(data => {
-      alert(JSON.stringify(data));
+      alert(JSON.stringify(data, null, 2));
       this.sample = data;
     })
   }

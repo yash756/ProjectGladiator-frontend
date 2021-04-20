@@ -48,8 +48,8 @@
 
     </form>
 
-    <div>
-        {{ sample }}
+    <div class="box box-default" *ngFor="let sample of sample | keyvalue">
+        <pre><b>{{ sample.key }}</b>  -  {{ sample.value }}</pre>
     </div>
 </div>
 
