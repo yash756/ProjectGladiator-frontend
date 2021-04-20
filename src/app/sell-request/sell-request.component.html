@@ -8,7 +8,7 @@
           <div align="center" class="container1">
               <div class="input1">
               <label  for="name"><b>Crop name :</b></label>
-              <input class="t1" name="name" placeholder=" crop name"  type="text" required  [(ngModel)]=crop.name #name="ngModel"><br/>
+              <input class="t1" name="name" placeholder=" crop name"  type="text" required  [(ngModel)]=crop.cropName #name="ngModel"><br/>
               
               <div *ngIf="form1.submitted && name.invalid">
                 <div class="error" *ngIf="name.errors.required">
@@ -54,25 +54,34 @@
                 <div class="error" *ngIf="basePrice.errors.required">
                   base price is required.
                 </div>
-                </div>
+              </div>
   
-              <label  for="startDate"> <b>start Date :</b></label>
+              <!-- <label  for="startDate"> <b>start Date :</b></label>
               <input class="t6" name="startDate"  type="date" required [(ngModel)]=crop.startDate #startDate="ngModel"><br/>
   
               <div *ngIf="form1.submitted && startDate.invalid">
                 <div class="error" *ngIf="startDate.errors.required">
                   start Date is required.
                 </div>
-                </div>
+              </div>
   
               <label  for="endDate"><b> end Date :</b></label>
               <input class="t7" name="endDate" type="date" required [(ngModel)]=crop.endDate #endDate="ngModel"><br/>
   
               <div *ngIf="form1.submitted && endDate.invalid">
-                <div class="error" *ngIf="endDate.errors.required">
-                  end Date is required.
+                  <div class="error" *ngIf="endDate.errors.required">
+                    end Date is required.
+                  </div>
+              </div> -->
+
+              <label  for="bidCuttOffTime"> <b>Bid Cutt Off Timee :</b></label>
+              <input class="t6" name="bidCuttOffTime"  type="number" required [(ngModel)]=crop.bidCuttOffTime #bidCuttOffTime="ngModel"><br/>
+  
+              <div *ngIf="form1.submitted && bidCuttOffTime.invalid">
+                <div class="error" *ngIf="bidCuttOffTime.errors.required">
+                  Bid Cutt-Off time is required.
                 </div>
-                </div>
+              </div>
               </div>
           
           <div class="input2">
@@ -85,6 +94,7 @@
                 PH required.
             </div>
             </div>
+
           
           <div class="button1">
             <button type="submit" class="request">Place Request</button>

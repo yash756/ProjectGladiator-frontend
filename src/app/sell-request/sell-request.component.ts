@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Crop } from '../appmodel/crop';
+import { RequestCropService } from '../request-crop.service';
 
 @Component({
   selector: 'app-sell-request',
@@ -9,30 +12,21 @@ import { NgForm } from '@angular/forms';
 export class SellRequestComponent implements OnInit {
 
   crop: Crop = new Crop();
-  constructor() { }
+  message: string;
+  constructor(private service: RequestCropService,private router: Router) { }
 
   ngOnInit(): void {
   }
 
   register(f: NgForm) {
-    if(f.valid){
-      alert(JSON.stringify("Successfully registered"))
-      //console.log(this.crop);
-    } 
-    else
-      alert("Please fix all the errors in the form and submit again")  
-  }
+    this.service.requestCrop(this.crop).subscribe(data =>{
+      alert(JSON.stringify(data));
+      console.log(JSON.stringify(data));
+      this.message = data['message'];
+      this.crop.farmer.id = parseInt(sessionStorage.getItem('farmerId')) ;
+      this.router.navigate(['app-farmer-welcome']);
+     })
 
 }
-
-export class Crop {
-  name: string;
-  cropType: string;
-  fertilizerType: string;
-  quantity: string;
-  basePrice: number;
-  startDate: Date;
-  endDate: Date;
-  soilPh: number;
 
 }

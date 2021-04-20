@@ -29,6 +29,7 @@ export class RegistrationComponent  {
 }
 
   export class Farmer{
+    
     fullName: string;
     contactNumber:number;
     //role:String;

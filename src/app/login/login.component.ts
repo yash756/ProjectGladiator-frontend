@@ -54,8 +54,8 @@ export class LoginComponent {
       if(response.status == true) {
         let farmerId = response.farmerId;
         let fullName = response.fullName;
-        sessionStorage.setItem('customerId', String(farmerId));
-        sessionStorage.setItem('customerName', fullName);
+        sessionStorage.setItem('farmerId', String(farmerId));
+        sessionStorage.setItem('farmerName', fullName);
         this.router.navigate(['app-farmer-welcome']);
       }
       else
