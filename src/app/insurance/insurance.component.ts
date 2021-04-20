@@ -18,9 +18,6 @@ export class InsuranceComponent implements OnInit {
 
   sample: any;
 
-  //let calpre = document.getElementById("calpre");
-
-
   calculate(form1:NgForm) {
     this.service.calculateInsurance(this.insurance).subscribe(data => {
       alert(JSON.stringify(data, null, 2));
