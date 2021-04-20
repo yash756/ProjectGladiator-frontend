@@ -18,9 +18,12 @@ export class InsuranceComponent implements OnInit {
 
   sample: any;
 
+  message: string;
+
   calculate(form1:NgForm) {
     this.service.calculateInsurance(this.insurance).subscribe(data => {
       alert(JSON.stringify(data, null, 2));
+      console.log(JSON.stringify(data));
       this.sample = data;
       //form1.resetForm();
     })
@@ -29,6 +32,8 @@ export class InsuranceComponent implements OnInit {
   apply(form1:NgForm) {
     this.service.applyInsurance(this.insurance).subscribe(data => {
       alert(JSON.stringify(data, null,2));
+      console.log(JSON.stringify(data));
+      this.insurance.farmer.id = parseInt(sessionStorage.getItem("farmerId"));
       form1.resetForm();
     })
   }
@@ -40,4 +45,9 @@ export class Insurance {
   area: number;
   season: string;
   year: Date;
+  farmer: Farmer = new Farmer();
+}
+
+export class Farmer {
+  id: number;
 }
