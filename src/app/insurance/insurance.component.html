@@ -4,7 +4,7 @@
     <div class="inner">
         <h2 align="center">Apply for Insurance</h2>
     </div>
-    <form #form1="ngForm" (ngSubmit)="calculate(form1)">
+    <form #form1="ngForm">
         <div align="center" class="container1">
             <div class="input1">
                 <label><b>Crop Name : </b></label>
@@ -40,7 +40,8 @@
                 </div>
 
                 <div class="button1">
-                    <button type="submit" class="request">Calculate</button>
+                    <button type="submit" class="request" (click)="calculate(form1)">Calculate</button>
+                    <button type="submit" class="request" (click)="apply(form1)">Apply for Insurance</button>
                 </div>
 
             </div>
@@ -48,8 +49,8 @@
 
     </form>
 
-    <div>
-        {{ sample }}
+    <div *ngFor="let sample of sample | keyvalue">
+        <pre><b>{{ sample.key }}</b>  -  {{ sample.value }}</pre>
     </div>
 </div>
 

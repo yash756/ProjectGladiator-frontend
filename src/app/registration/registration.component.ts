@@ -29,14 +29,15 @@ export class RegistrationComponent  {
 }
 
   export class Farmer{
-    
-    fullName: string;
-    contactNumber:number;
+
+    name: string;
+    contact:number;
+
     //role:String;
     address:String;
-    emailId:string;
+    email:string;
     password:string;
-    accountNumber:number;
+    bankAccountNo:number;
     ifscCode:string;
     // Aadharcard?:number;
     // pancard?:string;
