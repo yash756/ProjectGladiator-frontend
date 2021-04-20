@@ -3,13 +3,13 @@
     <div class="container">
         <h4>Personal Details</h4>
         <label  for="uname"><b>Full Name  </b></label>
-        <input class="f1" type="text" placeholder="Enter First Name " name="uname"  [(ngModel)]=farmer.fullName #uname="ngModel"><br/>
+        <input class="f1" type="text" placeholder="Enter First Name " name="uname"  [(ngModel)]=farmer.name #uname="ngModel"><br/>
         
         <label  for="contact"><b>Contact Number  </b></label>
-        <input class="f2" type="number" placeholder="Enter Contact" name="contact"  [(ngModel)]=farmer.contactNumber #contact="ngModel"><br/>
+        <input class="f2" type="number" placeholder="Enter Contact" name="contact"  [(ngModel)]=farmer.contact #contact="ngModel"><br/>
 
         <label for="email"><b>Email id  </b></label>
-        <input class="f3"  type="email" placeholder="Enter Email @abc.com" name="email"  [(ngModel)]=farmer.emailId #email="ngModel"><br/>
+        <input class="f3"  type="email" placeholder="Enter Email @abc.com" name="email"  [(ngModel)]=farmer.email #email="ngModel"><br/>
 
         <div class="d1">Address Details</div>
         <input class="a1" type="text" placeholder="Address" name="address"  [(ngModel)]=farmer.address #line1="ngModel"><br/>
@@ -26,7 +26,7 @@
         
         <div class="d1">Bank Details</div>
         <label for="account"><b>Account Number  </b></label> 
-        <input class="b1" type="number" name="account" [(ngModel)]=farmer.accountNumber #account="ngModel"><br/>
+        <input class="b1" type="number" name="account" [(ngModel)]=farmer.bankAccountNo #account="ngModel"><br/>
        
         
         <label for="ifsc"><b>IFSC  </b></label> 
