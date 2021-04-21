@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="space"></div>
+    <div id="form">
+        <form>
+            <label ><b>Email id</b></label> <br/>
+            <input  id="emailid" name="email" class="inputText" required email [(ngModel)]="login.email"  /><br/><br/>
+
+            <label ><b>Password</b></label><br/>
+            <input id="password" type="password" name="pass" class="inputText" required [(ngModel)]="login.password" /><br/><br/>
+                
+            <button (click)='loginCheck()'>Login</button>
+     
+       </form> 
+
+   
+    </div>
+</div> 

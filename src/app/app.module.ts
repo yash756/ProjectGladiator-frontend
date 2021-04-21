@@ -19,6 +19,11 @@ import { FormsModule } from '@angular/forms';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { InsuranceComponent } from './insurance/insurance.component';
+import { AdminWelcomeComponent } from './admin-welcome/admin-welcome.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-request.component';
+import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
+import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +42,11 @@ import { InsuranceComponent } from './insurance/insurance.component';
     FarmerWelcomeComponent,
     SellRequestComponent,
     InsuranceComponent,
+    AdminWelcomeComponent,
+    AdminLoginComponent,
+    AdminCropRequestComponent,
+    BidderRegistrationComponent,
+    BidderLoginComponent,
    
   ],
   imports: [
