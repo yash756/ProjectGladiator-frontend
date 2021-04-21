@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BidderMarketPlaceComponent implements OnInit {
 
-  constructor() { }
+  name:string;
+  id:number;
+  crop:availablecrop[];
+  basePrice:number;
 
-  ngOnInit(): void {
+  ngOnInit():void{
+    
   }
-
 }

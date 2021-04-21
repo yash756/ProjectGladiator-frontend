@@ -1,1 +1,62 @@
-<p>bidder-market-place works!</p>
+<div class="col">
+    <div  class="form-row">
+        <div class="container "> 
+        <div>
+            <h3 class="heading">Current Bids</h3> </div>
+        
+        <table class="table1">
+            <thead class="thead-dark">
+            <tr>
+                <th>Crop Id</th>
+                <th>Crop Name</th>
+                <th>Quantity</th>
+                <th>Base Price</th>
+                <th>Closing Date</th>
+              <!--  <th>Current Bid</th>--> 
+            </tr>
+            </thead>
+            <thead class="thead-dark">
+            <tr *ngFor="let c of crop">
+                
+                <td>{{c.id}}</td>
+                <td>{{c.name}}</td>
+                <td>{{c.quantity}}</td>
+                <td>{{c.basePrice}}</td>
+              
+                <td>{{c.endDate}}</td>
+                <td><Button type="submit" (click)= "setidBid(c.id,c.name,c.basePrice)" class="bidbtn">Make Bid</Button></td>
+            </tr>
+            </thead>
+        </table>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="container"> 
+                <div>
+                    <h3 class="heading2">Place bid</h3> </div>
+                <table class="table2">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>Crop ID</th>
+                        <th>Crop Name</th>
+                        <th>Current Bid</th>
+                        <th>Enter your Bid Price</th>
+                    </tr>
+                </thead>
+                <thead>
+                
+                        <div *ngIf="show">
+                        <!--<td><Button type="submit" onclick="placeBids()" class="btn">Place Bid</Button></td>-->
+                        <form (ngSubmit)="placeBids()">
+                            <input type = "number"  value =0 placeholder="Bid Amount" name="bidprice" [(ngModel)]="liveprice" >
+                            <input type="submit" value="place" id="submit">
+                            <h5>*Enter bid 100 greater than the current bid </h5>
+                        </form>
+                    </div>
+                </thead>
+                </table>
+                </div>
+
+    </div>
+
+</div>
