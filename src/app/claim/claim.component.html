@@ -7,9 +7,27 @@
         <form #form1="ngForm">
             <div align="center"  class="container1">
                 <div class="input1">
-                    <label><b></b></label>
+                    <label><b>Cause Of Loss : </b></label>
+                    <input class="t1" name="cause" type="text" required [(ngModel)]="claim.cause" #cause="ngModel"><br/>
+                    <div *ngIf="form1.submitted && cause.invalid">
+                        <div class="error" *ngIf="cause.errors.required">
+                            Proper cause required for claiming
+                        </div>
+                    </div>
+
+                    <label><b>Loss Date(approximate) : </b></label>
+                    <input class="t1" name="lossDate" type="date" required [(ngModel)]="claim.lossDate" #lossDate="ngModel"><br/>
+                    <div *ngIf="form1.submitted && lossDate.invalid">
+                        Proper date is required
+                    </div>
+                </div>
+
+                <div class="button1">
+                    <button type="submit" class="request" (click)="claiming(form1)">submit for approval</button>
                 </div>
             </div> 
         </form>
     </div>
 </div>
+
+<!-- only take cause and date of loss from user, get farmerid from session-->
