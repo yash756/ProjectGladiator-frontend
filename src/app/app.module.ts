@@ -19,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { InsuranceComponent } from './insurance/insurance.component';
+//import { ClaimInsuranceComponent } from './claim-insurance/claim-insurance.component';
+import { ClaimComponent } from './claim/claim.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { InsuranceComponent } from './insurance/insurance.component';
     FarmerWelcomeComponent,
     SellRequestComponent,
     InsuranceComponent,
+    //ClaimInsuranceComponent,
+    ClaimComponent,
    
   ],
   imports: [

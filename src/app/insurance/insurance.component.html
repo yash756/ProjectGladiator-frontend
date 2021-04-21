@@ -49,9 +49,25 @@
 
     </form>
 
-    <div *ngFor="let sample of sample | keyvalue">
+    <!--<div *ngFor="let sample of sample | keyvalue">
         <pre><b>{{ sample.key }}</b>  -  {{ sample.value }}</pre>
-    </div>
+    </div>-->
+
+    <table class="table">
+        <thead>
+            <tr><th>Season</th> <th>Area(in hec.)</th> <th>Premium(farmer)</th> <th>Premium(Govt)</th> <th>Crop</th> <th>Sum Insured</th></tr>
+        </thead>
+    <tbody>
+        <tr *ngFor="let item of sample">
+            <td>{{ item.season }}</td>
+            <td>{{ item.area }}</td>
+            <td>{{ item.sharePremium }}</td>
+            <td>{{ item.premium }}</td>
+            <td>{{ item.cropName }}</td>
+            <td>{{ item.sumInsured }}</td>
+        </tr>
+    </tbody>
+    </table>
 </div>
 
 </div>
