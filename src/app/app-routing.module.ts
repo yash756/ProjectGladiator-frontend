@@ -15,6 +15,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-request.component';
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
+import { ClaimComponent } from './claim/claim.component';
+
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -32,7 +34,9 @@ const routes: Routes = [
   {path:'app-admin-crop-request', component : AdminCropRequestComponent},
   {path:'app-bidder-registration', component: BidderRegistrationComponent},
   {path:'app-bidder-login', component : BidderLoginComponent},
-  {path:'app-bidder-welcome', component: BidderWelcomeComponent}
+  {path:'app-bidder-welcome', component: BidderWelcomeComponent},
+  {path:'app-claim', component: ClaimComponent}
+
 ];
 
 @NgModule({

@@ -19,11 +19,15 @@ import { FormsModule } from '@angular/forms';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { InsuranceComponent } from './insurance/insurance.component';
+
 import { AdminWelcomeComponent } from './admin-welcome/admin-welcome.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-request.component';
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
+//import { ClaimInsuranceComponent } from './claim-insurance/claim-insurance.component';
+import { ClaimComponent } from './claim/claim.component';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +51,8 @@ import { BidderLoginComponent } from './bidder-login/bidder-login.component';
     AdminCropRequestComponent,
     BidderRegistrationComponent,
     BidderLoginComponent,
-   
+    //ClaimInsuranceComponent,
+    ClaimComponent
   ],
   imports: [
     BrowserModule,
