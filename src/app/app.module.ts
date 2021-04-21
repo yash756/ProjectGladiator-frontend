@@ -41,7 +41,7 @@ import { ClaimComponent } from './claim/claim.component';
     BidderComponent,
     ViewMarketplaceComponent,
     RegistrationComponent,
-    BidderMarketPlaceComponent,
+    // BidderMarketPlaceComponent,
     BidderWelcomeComponent,
     FarmerWelcomeComponent,
     SellRequestComponent,

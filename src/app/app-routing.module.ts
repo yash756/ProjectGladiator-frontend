@@ -35,8 +35,8 @@ const routes: Routes = [
   {path:'app-bidder-registration', component: BidderRegistrationComponent},
   {path:'app-bidder-login', component : BidderLoginComponent},
   {path:'app-bidder-welcome', component: BidderWelcomeComponent},
-  {path:'app-claim', component: ClaimComponent}
-
+  {path:'app-claim', component: ClaimComponent},
+  {path:'app-bidder-market-place', component: BidderMarketPlaceComponent}
 ];
 
 @NgModule({
