@@ -27,6 +27,7 @@ import { BidderRegistrationComponent } from './bidder-registration/bidder-regist
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 //import { ClaimInsuranceComponent } from './claim-insurance/claim-insurance.component';
 import { ClaimComponent } from './claim/claim.component';
+import { ApproveClaimComponent } from './approve-claim/approve-claim.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ClaimComponent } from './claim/claim.component';
     BidderRegistrationComponent,
     BidderLoginComponent,
     //ClaimInsuranceComponent,
-    ClaimComponent
+    ClaimComponent,
+    ApproveClaimComponent
   ],
   imports: [
     BrowserModule,

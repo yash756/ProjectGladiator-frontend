@@ -17,10 +17,11 @@ export class ClaimComponent implements OnInit {
   claim: Claim = new Claim();
   message: string;
 
-  claiming(form1:NgForm) {
+  claiming(f:NgForm) {
+    this.claim.farmer.id = parseInt(sessionStorage.getItem('farmerId'));
     this.service.claimInsurance(this.claim).subscribe(data => {
-      alert(JSON.stringify(data, null, 2));
-      this.claim.farmer.id = parseInt(sessionStorage.getItem("farmerId"));
+      alert(JSON.stringify(data));
+      
     })
   }
 
