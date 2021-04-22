@@ -1,41 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { BidDto } from '../bid-dto';
+
 import { BidderService } from '../bidder.service';
+import { FarmerService } from '../farmer.service';
 
 @Component({
-  selector: 'app-bidder-market-place',
-  templateUrl: './bidder-market-place.component.html',
-  styleUrls: ['./bidder-market-place.component.css']
+  selector: 'app-farmer-market-place',
+  templateUrl: './farmer-market-place.component.html',
+  styleUrls: ['./farmer-market-place.component.css']
 })
-export class BidderMarketPlaceComponent implements OnInit {
+export class FarmerMarketPlaceComponent implements OnInit {
 
   marketPlace:MarketPlace;
-  index:number=0;
- // marketPlace:BidDto[]=[];
+  
 
-  constructor(private service:BidderService ,private router: Router) {
+  constructor(private service:FarmerService ,private router: Router) {
     this.service.viewMarketPlace(this.marketPlace).subscribe(
       fetch=>{
         alert(JSON.stringify(fetch,null,2));
-        console.log(JSON.stringify(fetch));
+        // console.log(JSON.stringify(fetch));
         this.sample = fetch;
        // console.log(fetch);
       }
     );
    }
+   sample: any; 
 
   ngOnInit(): void {
-   
-  }
-
-  sample: any;
-
-  
-
-  placeBid(itemNo:any){
-    this.router.navigateByUrl("/app-place-bids");
-    sessionStorage.setItem('itemNo',itemNo);
   }
 
 }
@@ -47,4 +38,9 @@ export class MarketPlace {
   basePrice: number;
   status: String;
   quantity: number;
+  farmer:Farmer;
+}
+
+export class Farmer{
+  id: number;
 }

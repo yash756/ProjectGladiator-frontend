@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import { InsuranceComponent } from './insurance/insurance.component'
+import { FarmerMarketPlaceComponent } from './farmer-market-place/farmer-market-place.component';
+import { PlaceBidsComponent } from './place-bids/place-bids.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -21,7 +23,10 @@ const routes: Routes = [
   {path:'app-bidder-welcome', component: BidderWelcomeComponent},
   {path:'app-sell-request', component: SellRequestComponent},
   {path:'app-registration', component: RegistrationComponent},
-  {path:'app-insurance', component: InsuranceComponent}
+  {path:'app-insurance', component: InsuranceComponent},
+  {path:'app-bidder-market-place', component:BidderMarketPlaceComponent},
+  {path :'app-farmer-market-place', component:FarmerMarketPlaceComponent},
+  {path:'app-place-bids', component:PlaceBidsComponent}
 ];
 
 @NgModule({

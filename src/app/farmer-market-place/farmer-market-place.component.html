@@ -15,7 +15,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let i of sample ">
+        <tr *ngFor="let i of sample "> 
           <!-- <th scope="row">{{ i + 1 }}</th> -->
           <!-- <td>{{ Bid.Sr.No }}</td> -->
           <td>{{ i.itemNo}}</td>
@@ -24,9 +24,6 @@
           <td>{{ i.basePrice }}</td>
           <td>{{ i.status }}</td>
           <td>{{ i.quantity }}</td>
-          
-          <button class="btn btn-success" (click)="placeBid(i.itemNo)">Place Bid</button>
-          <!-- <td>{{ i.maxBid }}</td> -->
         </tr>
       </tbody>
     </table>
