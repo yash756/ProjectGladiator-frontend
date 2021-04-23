@@ -1,0 +1,52 @@
+<form #regForm="ngForm"  (ngSubmit)=" register(regForm)">
+    <div class="top"></div>
+      <div class="container">
+          <h4>Personal Details</h4>
+          <label  for="uname"><b>Full Name  </b></label>
+          <input class="f1" type="text" placeholder="Enter First Name " name="uname"  [(ngModel)]=bidder.fullName #uname="ngModel"><br/>
+          
+          <label  for="contact"><b>Contact Number  </b></label>
+          <input class="f2" type="number" placeholder="Enter Contact" name="contact"  [(ngModel)]=bidder.contactNumber #contact="ngModel"><br/>
+  
+          <label for="email"><b>Email id  </b></label>
+          <input class="f3"  type="email" placeholder="Enter Email @abc.com" name="email"  [(ngModel)]=bidder.emailId #email="ngModel"><br/>
+  
+          <div class="d1">Address Details</div>
+          <input class="a1" type="text" placeholder="Address" name="address"  [(ngModel)]=bidder.address #line1="ngModel"><br/>
+          <!-- <input class="a1" type="text" placeholder="Line 2" name="addressLine2"  [(ngModel)]=farmer.addressLine2 #line2="ngModel"><br/> -->
+  
+          <label for="state"><b>State </b></label> 
+          <input class="a2" type="text" name="state"  [(ngModel)]=bidder.state #state="ngModel" ><br/>
+         
+          <label for="city"><b>City </b></label> 
+          <input class="a3"  type="text" name="city"[(ngModel)]=bidder.city #contact="ngModel" ><br/>
+         
+          <label for="pin"><b>Pin </b></label> 
+          <input class="a4"  type="number" name="pin"  [(ngModel)]=bidder.pincode #pin="ngModel" ><br/>
+          
+          <div class="d1">Bank Details</div>
+          <label for="account"><b>Account Number  </b></label> 
+          <input class="b1" type="number" name="account" [(ngModel)]=bidder.accountNumber #account="ngModel"><br/>
+         
+          
+          <label for="ifsc"><b>IFSC  </b></label> 
+          <input class="b2" type="text" name="ifsc" [(ngModel)]=bidder.ifscCode #ifsc="ngModel"><br/>
+         <!--
+          <div class="doc">Document</div>
+          <label for="aadhar"><b>Aadhar </b></label>
+           <input class="d1" type="number" name="aadhar"  [(ngModel)]=bidder.Aadharcard #addhar="ngModel"><br/>
+                                                   
+         <label for="pan"><b>PAN  </b></label>
+           <input class="d2" type="text" name="pan"   [(ngModel)]=bidder.pancard #pan="ngModel"> <br/>
+                                          
+             -->  
+                                           
+          <label for="password"><b>Password  </b></label>
+          <input class="pass1" type="password" name="pass1"   [(ngModel)]=bidder.password #pass="ngModel"><br/>
+         <!--- <label for="confirm"><b>Confirm Password  </b></label>
+          <input class="pass2" type="password" name="pass2"   [(ngModel)]=confirmPassword #pass="ngModel"><br/>
+         -->
+         <div class="space"></div>     
+         <button type="submit">register</button>
+      
+  

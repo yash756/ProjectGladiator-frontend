@@ -11,10 +11,10 @@ import { FarmerService } from '../farmer.service';
 })
 export class LoginComponent {
 
-  // email?: string ;
-  // password?: string ;
-  // message?: string;
-  // check?: boolean;
+  // email: string ;
+  // password: string ;
+  // //message?: string;
+  // check: boolean;
 
   login: Login = new Login();
   message: string;
@@ -47,20 +47,22 @@ export class LoginComponent {
   // }
 
   loginCheck() {
-    console.log(this.login);
-    this.farmerService.login(this.login).subscribe(response => {
-      alert(JSON.stringify(response));
-      console.log(response);
-      if(response.status == true) {
-        let farmerId = response.farmerId;
-        let fullName = response.fullName;
-        sessionStorage.setItem('customerId', String(farmerId));
-        sessionStorage.setItem('customerName', fullName);
-        this.router.navigate(['app-farmer-welcome']);
-      }
-      else
-        this.message = response.message;
-    })
+         
+      console.log(this.login);
+      this.farmerService.login(this.login).subscribe(response => {
+        alert(JSON.stringify(response));
+        console.log(response);
+        if(response.status == true) {
+          let farmerId = response.farmerId;
+          let fullName = response.fullName;
+          sessionStorage.setItem('farmerId', String(farmerId));
+          sessionStorage.setItem('farmerName', fullName);
+          this.router.navigate(['app-farmer-welcome']);
+        }
+        else
+          this.message = response.message;
+      })
+  
   }
 
   // email: string = 'xyz@gmail.com' ;

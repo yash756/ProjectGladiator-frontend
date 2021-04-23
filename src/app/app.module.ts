@@ -22,6 +22,14 @@ import { InsuranceComponent } from './insurance/insurance.component';
 import { PlaceBidsComponent } from './place-bids/place-bids.component';
 import { FarmerMarketPlaceComponent } from './farmer-market-place/farmer-market-place.component';
 
+import { AdminWelcomeComponent } from './admin-welcome/admin-welcome.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-request.component';
+import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
+import { BidderLoginComponent } from './bidder-login/bidder-login.component';
+import { ClaimComponent } from './claim/claim.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,14 +42,19 @@ import { FarmerMarketPlaceComponent } from './farmer-market-place/farmer-market-
     BidderComponent,
     ViewMarketplaceComponent,
     RegistrationComponent,
-    BidderMarketPlaceComponent,
+     BidderMarketPlaceComponent,
     BidderWelcomeComponent,
     FarmerWelcomeComponent,
     SellRequestComponent,
     InsuranceComponent,
     PlaceBidsComponent,
     FarmerMarketPlaceComponent,
-   
+    AdminWelcomeComponent,
+    AdminLoginComponent,
+    AdminCropRequestComponent,
+    BidderRegistrationComponent,
+    BidderLoginComponent,
+    ClaimComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { BidderMarketPlaceComponent, MarketPlace } from './bidder-market-place/bidder-market-place.component';
 import { Bid } from './place-bids/place-bids.component';
 
+import { Login } from './appmodel/login';
+import { Bidder } from './bidder-registration/bidder-registration.component';
 
 
 @Injectable({
@@ -12,6 +14,7 @@ import { Bid } from './place-bids/place-bids.component';
 export class BidderService {
 
   constructor(private http: HttpClient) { }
+
   
    placebids(itemNo,bidderId) : Observable<any>{
 
