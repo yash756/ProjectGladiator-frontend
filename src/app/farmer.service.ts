@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Farmer } from './registration/registration.component';
 import { Login } from './appmodel/login';
+import { MarketPlace } from './bidder-market-place/bidder-market-place.component';
 
 
 @Injectable({
@@ -21,4 +22,16 @@ export class FarmerService {
     let url = "http://localhost:8182/registerFarmer.lti";
     return this.http.post(url,farmer);
   }
+
+  // viewMarketPlace(marketPlace: MarketPlace) : Observable<any>{
+  //   let url = "http://localhost:8182/fetchMarketPlace";
+  //   return this.http.get(url);
+  // }
+
+  viewMarketPlace(id) : Observable<object> {
+    let url = "http://localhost:8182/registerFarmer.lti";
+    return this.http.get(url);
+  }
 }
+
+

@@ -1,0 +1,38 @@
+<div class="content" style="position: absolute; top: 30%; left: 30%;" >
+    <h2>Place bids</h2>
+    <table class="table">
+      <thead>
+        <tr>
+         
+          <th scope="col">itemNo</th>
+          <th scope="col">cropName</th>
+          <th scope="col">cropType</th>
+          <th scope="col">basePrice</th>
+          <th scope="col">status</th>
+          <th scope="col">quantity</th>
+          
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <tr>
+          <td>{{ marketPlace.itemNo}}</td>
+          <td>{{ marketPlace.cropName }}</td>
+          <td>{{ marketPlace.cropType }}</td>
+          <td>{{ marketPlace.basePrice }}</td>
+          <td>{{ marketPlace.status }}</td>
+          <td>{{ marketPlace.quantity }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <input class="t4" name="quantity" placeholder=" enter bidding amount" type="number"required [(ngModel)]=bid.quantity #quantity="ngModel" ><br/>
+      <!-- <div *ngIf="form1.submitted && quantity.invalid">
+                <div class="error" *ngIf="quantity.errors.required">
+                         Quantity is required.
+                </div>
+          </div> -->
+  
+     <button class="btn btn-success" (click)="placeBidAgain()">Amount</button> 
+  </div> 
