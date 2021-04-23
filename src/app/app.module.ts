@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -19,15 +18,18 @@ import { FormsModule } from '@angular/forms';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { InsuranceComponent } from './insurance/insurance.component';
+import { PlaceBidsComponent } from './place-bids/place-bids.component';
+import { FarmerMarketPlaceComponent } from './farmer-market-place/farmer-market-place.component';
 import { AdminWelcomeComponent } from './admin-welcome/admin-welcome.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-request.component';
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
-//import { ClaimInsuranceComponent } from './claim-insurance/claim-insurance.component';
 import { ClaimComponent } from './claim/claim.component';
 import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin-approve-sold-crops.component';
 import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.component';
+import { ApproveClaimComponent } from './approve-claim/approve-claim.component';
+import { BiddercheckstatusComponent } from './biddercheckstatus/biddercheckstatus.component';
 
 
 @NgModule({
@@ -47,15 +49,18 @@ import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.
     FarmerWelcomeComponent,
     SellRequestComponent,
     InsuranceComponent,
+    PlaceBidsComponent,
+    FarmerMarketPlaceComponent,
     AdminWelcomeComponent,
     AdminLoginComponent,
     AdminCropRequestComponent,
     BidderRegistrationComponent,
     BidderLoginComponent,
-    //ClaimInsuranceComponent,
-    ClaimComponent,
     AdminApproveSoldCropsComponent,
-    FarmerCropsSoldComponent
+    FarmerCropsSoldComponent,
+    ClaimComponent,
+    ApproveClaimComponent,
+    BiddercheckstatusComponent
   ],
   imports: [
     BrowserModule,

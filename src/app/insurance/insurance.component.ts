@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { InsuranceService } from '../insurance.service';
+import { Insurance } from "../appmodel/insurance";
 
 @Component({
   selector: 'app-insurance',
@@ -20,10 +21,11 @@ export class InsuranceComponent implements OnInit {
 
   message: string;
 
-  calculate(form1:NgForm) {
+  calculate(f:NgForm) {
     this.service.calculateInsurance(this.insurance).subscribe(data => {
       alert(JSON.stringify(data, null, 2));
       console.log(JSON.stringify(data));
+      this.insurance.farmer.id = parseInt(sessionStorage.getItem('farmerId'));
       this.sample = data;
       this.sample = Array.of(this.sample);
       //form1.resetForm();
@@ -31,8 +33,8 @@ export class InsuranceComponent implements OnInit {
   }
 
   //store policyNo in session storage.
-  apply(form1:NgForm) {
-    this.insurance.farmer.id = parseInt(sessionStorage.getItem("farmerId"));
+  apply(f:NgForm) {
+    this.insurance.farmer.id = parseInt(sessionStorage.getItem('farmerId'));
     this.service.applyInsurance(this.insurance).subscribe(data => {
       alert(JSON.stringify(data, null,2));
       console.log(JSON.stringify(data));
@@ -40,20 +42,9 @@ export class InsuranceComponent implements OnInit {
       //let policyNo = data.appliedInsuranceId;
       //sessionStorage.setItem('policyNo', String(policyNo));
       
-      form1.resetForm();
+      f.resetForm();
     })
   }
 
 }
 
-export class Insurance {
-  cropName: string;
-  area: number;
-  season: string;
-  year: Date;
-  farmer: Farmer = new Farmer();
-}
-
-export class Farmer {
-  id: number;
-}
