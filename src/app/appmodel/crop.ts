@@ -7,10 +7,11 @@ export class Crop {
     // startDate: Date;
     // endDate: Date;
     soilPh: number;
-    bidCuttOffTime: number;
+    bidCutoffTime: number;
     farmer: Farmer = new Farmer();
   
   }
   export class Farmer{
     id: number;
+
   }

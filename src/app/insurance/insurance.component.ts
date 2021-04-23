@@ -32,12 +32,14 @@ export class InsuranceComponent implements OnInit {
 
   //store policyNo in session storage.
   apply(form1:NgForm) {
+    this.insurance.farmer.id = parseInt(sessionStorage.getItem("farmerId"));
     this.service.applyInsurance(this.insurance).subscribe(data => {
       alert(JSON.stringify(data, null,2));
       console.log(JSON.stringify(data));
+    
       //let policyNo = data.appliedInsuranceId;
       //sessionStorage.setItem('policyNo', String(policyNo));
-      this.insurance.farmer.id = parseInt(sessionStorage.getItem("farmerId"));
+      
       form1.resetForm();
     })
   }

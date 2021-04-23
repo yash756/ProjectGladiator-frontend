@@ -16,6 +16,7 @@ import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-reque
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { ClaimComponent } from './claim/claim.component';
+import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin-approve-sold-crops.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path:'app-bidder-registration', component: BidderRegistrationComponent},
   {path:'app-bidder-login', component : BidderLoginComponent},
   {path:'app-bidder-welcome', component: BidderWelcomeComponent},
-  {path:'app-claim', component: ClaimComponent}
+  {path:'app-claim', component: ClaimComponent},
+  {path:'app-admin-approve-sold-crops', component : AdminApproveSoldCropsComponent}
 
 ];
 

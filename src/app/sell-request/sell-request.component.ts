@@ -16,6 +16,7 @@ export class SellRequestComponent implements OnInit {
   constructor(private service: RequestCropService,private router: Router) { }
 
   ngOnInit(): void {
+    
   }
 
   register(f: NgForm) {
