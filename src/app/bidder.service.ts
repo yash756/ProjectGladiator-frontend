@@ -33,4 +33,14 @@ export class BidderService {
     return this.http.get(url);
   }
 
+  login(login: Login) : Observable<any> {
+    let url = "http://localhost:8182/loginBidder";
+   return this.http.post(url, login); 
+  }
+
+  registerBidder(bidder: Bidder) : Observable<object> {
+    let url = "http://localhost:8182/registerBidder.lti";
+    return this.http.post(url,bidder);
+  }
+
 }

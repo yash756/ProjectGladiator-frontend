@@ -48,6 +48,7 @@ export class MarketPlace {
   basePrice: number;
   status: String;
   quantity: number;
+ 
 }
 
 // export class MarketPlace {

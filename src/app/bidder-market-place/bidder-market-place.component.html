@@ -12,7 +12,6 @@
           <th scope="col">status</th>
           <th scope="col">quantity</th>
           <!-- <th scope="col">maxBid</th> -->
-         
         </tr>
       </thead>
       <tbody>
@@ -25,6 +24,7 @@
           <td>{{ i.basePrice }}</td>
           <td>{{ i.status }}</td>
           <td>{{ i.quantity }}</td>
+          <!-- <td>{{ i.maxBid }}</td> -->
           
           <button class="btn btn-success" (click)="placeBid(i.itemNo)">Place Bid</button>
           <!-- <td>{{ i.maxBid }}</td> -->
