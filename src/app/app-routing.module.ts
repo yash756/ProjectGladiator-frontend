@@ -17,7 +17,7 @@ import { BidderRegistrationComponent } from './bidder-registration/bidder-regist
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { ClaimComponent } from './claim/claim.component';
 import { ApproveClaimComponent } from "./approve-claim/approve-claim.component";
-
+import { BiddercheckstatusComponent } from "./biddercheckstatus/biddercheckstatus.component";
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -38,7 +38,8 @@ const routes: Routes = [
   {path:'app-bidder-welcome', component: BidderWelcomeComponent},
   {path:'app-claim', component: ClaimComponent},
   {path:'app-bidder-market-place', component: BidderMarketPlaceComponent},
-  {path:'app-approve-claim', component: ApproveClaimComponent}
+  {path:'app-approve-claim', component: ApproveClaimComponent},
+  {path:'app-biddercheckstatus', component: BiddercheckstatusComponent}
 ];
 
 @NgModule({

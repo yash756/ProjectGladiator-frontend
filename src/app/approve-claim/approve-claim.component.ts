@@ -26,10 +26,10 @@ export class ApproveClaimComponent implements OnInit {
 }
 
 export class Claims {
-  "id": number;
-  "insuranceCompany": string;
-  "insureeName": string;
-  "sumInsured": number;
-  "cause": string;
-  "lossDate": Date;
+  id: number;
+  insuranceCompany: string;
+  insureeName: string;
+  sumInsured: number;
+  cause: string;
+  lossDate: Date;
 }

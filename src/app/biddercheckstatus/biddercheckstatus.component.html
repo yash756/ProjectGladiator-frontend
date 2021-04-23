@@ -1,0 +1,14 @@
+<table class="table" style="text-align: center;">
+<thead>
+    <tr><th>Bid ID</th> <th>Base Price</th> <th>Amount bid</th> <th>Date</th> <th>CurrentStatus</th></tr>
+</thead>
+<tbody>
+    <tr *ngFor="let i of sample">
+        <td>{{i.bidId}}</td>
+        <td>{{i.basePrice}}</td>
+        <td>{{i.bidAmount}}</td>
+        <td>{{i.dateOfBid}}</td>
+        <td>{{i.marketplace.status}}</td>
+    </tr>
+</tbody>
+</table>
