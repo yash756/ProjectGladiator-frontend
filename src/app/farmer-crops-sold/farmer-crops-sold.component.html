@@ -1,1 +1,28 @@
-<p>farmer-crops-sold works!</p>
+<div class="space">
+
+</div>
+<table class="table" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>Item No</th> 
+            <th>Crop Name</th>
+            <th>Quantity</th> 
+            <th>Base Price</th> 
+            <th>Bid Amount</th> 
+            <th>Request Id</th> 
+            
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let i of sample">
+        
+        <td>{{i.itemNo}}</td>
+        <td>{{i.cropName}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.basePrice}}</td>
+        <td>{{i.bidAmount}}</td>
+        <td>{{i.requestId}}</td>
+       
+    </tr>
+</tbody>    
+</table>

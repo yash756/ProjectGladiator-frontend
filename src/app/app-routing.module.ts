@@ -22,6 +22,7 @@ import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin
 
 import { ApproveClaimComponent } from "./approve-claim/approve-claim.component";
 import { BiddercheckstatusComponent } from "./biddercheckstatus/biddercheckstatus.component";
+import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -47,7 +48,8 @@ const routes: Routes = [
   {path:'app-admin-approve-sold-crops', component : AdminApproveSoldCropsComponent},
   {path:'app-bidder-market-place', component: BidderMarketPlaceComponent},
   {path:'app-approve-claim', component: ApproveClaimComponent},
-  {path:'app-biddercheckstatus', component: BiddercheckstatusComponent}
+  {path:'app-biddercheckstatus', component: BiddercheckstatusComponent},
+  {path:'app-farmer-crops-sold', component : FarmerCropsSoldComponent}
 ];
 
 @NgModule({

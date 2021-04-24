@@ -1,14 +1,25 @@
+<div class="space">
+    
+</div>
 <div class="contain">
-    <img  src="../../assets/homeImages/new4.jpg"   style="height:600px;width:1500px;">
+    <img  src="../../assets/homeImages/new4.jpg"   style="height:800px;width:1500px;">
     <div class="container2">
        
         
         <h2>Welcome Bidder</h2>
         <br>
         <div class="border">
+            <h2>Available Functionalities</h2><br/>
             <p>
-                <button (click)="viewMarket(bidder.bidderId)"> View MarketPlace</button>
-            </p>
+                <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-viewsoldhistory'">View Crop Brought History</a>
+            </p><br>
+            <p>
+                <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-bidder-market-place'">View Marketplace</a>
+            </p><br>
+            <p>
+                <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-biddercheckstatus'">Check Status of bids</a>
+            </p><br>
+           
         </div>
     
 </div>

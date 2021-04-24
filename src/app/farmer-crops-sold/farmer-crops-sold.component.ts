@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FarmerService } from '../farmer.service';
 
 
 @Component({
@@ -8,30 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FarmerCropsSoldComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: FarmerService ,private router: Router) { 
+    this.service.viewSoldCrops(this.farmerId).subscribe(data => {
+    alert(JSON.stringify(data,null,2));
+    console.log(JSON.stringify(data));
+    this.sample = data;
+    //this.sample = Array.of(this.sample);
+  })
+}
 
   ngOnInit(): void {
   }
-
+sold : SoldCropDetails;
+sample:any;
+farmerId = sessionStorage.getItem('farmerId');
 }
 
-export class Bid {
-  bidderId : number
-  marketPlace: MarketPlace = new MarketPlace();
-}
-
-export class MarketPlace{ 
-  itemNo : number;
-  cropName: string;
-  quantity: number;
-  request: Request = new Request();
-}
-
-export class Request{
-  requestId : number;
-  farmer : Farmer = new Farmer();
-}
-
-export class Farmer{
-  farmerId: number
+export class SoldCropDetails{
+    itemNo: number;
+	  cropName : String;
+	  quantity: number;
+	  basePrice:number;
+	  bidAmount: number;
+    requestId: number;
 }
