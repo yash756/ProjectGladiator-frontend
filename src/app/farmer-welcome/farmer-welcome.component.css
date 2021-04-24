@@ -48,6 +48,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 .border{
@@ -58,6 +59,29 @@ img{
     padding-right: 20px;
 
 }
+
+.space{
+    padding-top: 3.5%;
+}
+
+.request {
+    background-color:#99ff25;
+    color:black;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    }
+    .request:hover {
+    opacity: 1;
+    }
+
+/* .topcorner{
+    position: absolute;
+    top: 10;
+    right:10;
+} */
 
 /* .container{
     background-color: lightgrey; 

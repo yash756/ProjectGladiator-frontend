@@ -75,10 +75,10 @@
               </div> -->
 
               <label  for="bidCuttOffTime"> <b>Bid Cutt Off Timee :</b></label>
-              <input class="t6" name="bidCuttOffTime"  type="number" required [(ngModel)]=crop.bidCuttOffTime #bidCuttOffTime="ngModel"><br/>
+              <input class="t6" name="bidCuttOffTime"  type="number" required [(ngModel)]=crop.bidCutoffTime #bidCuttOffTime="ngModel"><br/>
   
               <div *ngIf="form1.submitted && bidCuttOffTime.invalid">
-                <div class="error" *ngIf="bidCuttOffTime.errors.required">
+                <div class="error" *ngIf="bidCutoffTime.errors.required">
                   Bid Cutt-Off time is required.
                 </div>
               </div>

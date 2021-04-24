@@ -1,0 +1,32 @@
+<div class="space">
+
+</div>
+<table class="table" style="text-align: center;">
+    <thead>
+        <tr><th>Item No</th> 
+        <th>Crop Type</th>
+        <th>Crop Name</th> 
+        <th>Quantity</th> 
+        <th>Base Price</th>
+        <!-- <th>Request ID</th>   -->
+        <th>Start Time</th> 
+        <th>End Time</th>
+        <th>Status </th>
+    </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let i of sample">
+        <td>{{i.itemNo}}</td>
+        <td>{{i.cropType}}</td>
+        <td>{{i.cropName}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.basePrice}}</td>
+        <!-- <td>{{i.requestId}}</td> -->
+        <td>{{i.startTime}}</td>
+        <td>{{i.endTime}}</td>
+        <td>{{i.status}}</td>
+        <!--<td>{{i.farmerId}}</td> -->
+        <button class="btn btn-success" (click)="approve(i.itemNo)">Approve</button>
+    </tr>
+</tbody>    
+</table>

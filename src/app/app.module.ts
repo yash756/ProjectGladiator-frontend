@@ -26,6 +26,8 @@ import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-reque
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { ClaimComponent } from './claim/claim.component';
+import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin-approve-sold-crops.component';
+import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.component';
 import { ApproveClaimComponent } from './approve-claim/approve-claim.component';
 import { BiddercheckstatusComponent } from './biddercheckstatus/biddercheckstatus.component';
 
@@ -54,6 +56,8 @@ import { BiddercheckstatusComponent } from './biddercheckstatus/biddercheckstatu
     AdminCropRequestComponent,
     BidderRegistrationComponent,
     BidderLoginComponent,
+    AdminApproveSoldCropsComponent,
+    FarmerCropsSoldComponent,
     ClaimComponent,
     ApproveClaimComponent,
     BiddercheckstatusComponent
