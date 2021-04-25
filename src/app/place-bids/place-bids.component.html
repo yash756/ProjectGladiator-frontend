@@ -10,6 +10,7 @@
           <th scope="col">basePrice</th>
           <th scope="col">status</th>
           <th scope="col">quantity</th>
+          <th scope="col">Max Bid</th>
           
          
         </tr>
@@ -23,11 +24,12 @@
           <td>{{ marketPlace.basePrice }}</td>
           <td>{{ marketPlace.status }}</td>
           <td>{{ marketPlace.quantity }}</td>
+          <td>{{ marketPlace.maxBid}}</td>
           
         </tr>
       </tbody>
     </table>
-    <input class="t4" name="quantity" placeholder=" enter bidding amount" type="number"required [(ngModel)]=bid.quantity #quantity="ngModel" ><br/>
+     <input class="t4" name="bidAmount" placeholder=" enter bidding amount" type="number"required [(ngModel)]=bid.bidAmount #bidAmount="ngModel" ><br/>
       <!-- <div *ngIf="form1.submitted && quantity.invalid">
                 <div class="error" *ngIf="quantity.errors.required">
                          Quantity is required.

@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 
 import { BidderService } from '../bidder.service';
 import { FarmerService } from '../farmer.service';
+import { Bid } from '../place-bids/place-bids.component';
+import { ViewMarketplaceComponent } from '../view-marketplace/view-marketplace.component';
 
 @Component({
   selector: 'app-farmer-market-place',
@@ -11,20 +13,21 @@ import { FarmerService } from '../farmer.service';
 })
 export class FarmerMarketPlaceComponent implements OnInit {
 
-  marketPlace:MarketPlace;
-  
 
-  constructor(private service:FarmerService ,private router: Router) {
-    this.service.viewMarketPlace(this.marketPlace).subscribe(
+  
+  // marketPlace.farmer.id = sessionStorage.getItem('farmerId');
+  constructor(private service:FarmerService,private router: Router) {
+    this.service.viewMarketPlace(this.id).subscribe(
       fetch=>{
         alert(JSON.stringify(fetch,null,2));
-        // console.log(JSON.stringify(fetch));
+        console.log(JSON.stringify(fetch));
         this.sample = fetch;
        // console.log(fetch);
       }
     );
    }
-   sample: any; 
+   sample: any;
+  id=sessionStorage.getItem('farmerId');
 
   ngOnInit(): void {
   }
@@ -38,9 +41,15 @@ export class MarketPlace {
   basePrice: number;
   status: String;
   quantity: number;
-  farmer:Farmer;
+  maxBid: number;
+  
 }
 
-export class Farmer{
-  id: number;
-}
+// export class Farmer{
+//   id: number;
+// }
+
+// export class Bid{
+//   bidAmount:number;
+//   marketPlace : MarketPlace;
+// }

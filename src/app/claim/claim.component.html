@@ -1,11 +1,16 @@
 <div class="main">
 
     <div class="start">
-        <div class="inner">
+        <div>
             <h2 align="centre">Claim Insurance</h2>
         </div>
         <form #form2="ngForm">
             <div align="center"  class="container1">
+                <div *ngIf="sample">
+                    <p>Policy Number     : {{sample.policyNo}}</p>
+                    <p>Insurance Company : {{sample.insuranceCompany}}</p>
+                    <p>Sum Insured       : {{sample.sumInsured}}</p>
+                </div>
                 <div class="input1">
                     <label><b>Cause Of Loss : </b></label>
                     <input class="t1" name="cause" type="text" required [(ngModel)]="claim.cause" #cause="ngModel"><br/>

@@ -20,7 +20,7 @@ export class BiddercheckstatusComponent implements OnInit {
   }
 
   bid: Bid;
-  bidder: Bidder;
+  bidder: Bidder = new Bidder();
   sample: any;
 
 }

@@ -16,10 +16,10 @@ export class BidderService {
   constructor(private http: HttpClient) { }
 
   
-   placebids(itemNo,bidderId) : Observable<any>{
+   placebids(bid:Bid) : Observable<any>{
 
       let url = "http://localhost:8182/placeBids";
-      return this.http.post(url,itemNo,bidderId);
+      return this.http.post(url,bid);
    }
 
   fetchCropFromMarketPlace(itemNo) : Observable<any>{

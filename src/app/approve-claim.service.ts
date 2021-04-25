@@ -14,4 +14,9 @@ export class ApproveClaimService {
     let url = "http://localhost:8182/approveClaims";
     return this.http.get(url);
   }
+
+  approveClaims(claims: Claims) : Observable<any> {
+    let url = "http://localhost:8182/actually-Approve";
+    return this.http.post(url, claims);
+  }
 }

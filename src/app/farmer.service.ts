@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Farmer } from './registration/registration.component';
 import { Login } from './appmodel/login';
 import { MarketPlace } from './bidder-market-place/bidder-market-place.component';
+import { Farmer1 } from './farmer-welcome/farmer-welcome.component';
 
 
 @Injectable({
@@ -29,7 +30,7 @@ export class FarmerService {
   // }
 
   viewMarketPlace(id) : Observable<object> {
-    let url = "http://localhost:8182/registerFarmer.lti";
+    let url = "http://localhost:8182/fetchFarmerMarketPlace?id="+id;
     return this.http.get(url);
   }
 
@@ -42,6 +43,10 @@ export class FarmerService {
   picUpload(formData: FormData) : Observable<any> {
     let url = "http://localhost:8181/pic-upload";
    return this.http.post(url, formData); 
+  }
+  viewNotification(farmer : Farmer1) : Observable<any> {
+    let url = "http://localhost:8182/notified";
+    return this.http.post(url, farmer);
   }
 }
 
