@@ -21,7 +21,13 @@ export class ApproveClaimComponent implements OnInit {
   claims : Claims;
   sample : any;
 
-  //add function for a button, which will send email notification
+  //add function for a button, which will send notification
+  approve(item : number){
+    this.service.approveClaims(this.sample[item]).subscribe(data => {
+      //alert(JSON.stringify(data, null, 2));
+      alert(data['message']);
+    })
+  }
 
 }
 
@@ -32,4 +38,9 @@ export class Claims {
   sumInsured: number;
   cause: string;
   lossDate: Date;
+  farmer : Farmer = new Farmer();
+}
+
+export class Farmer {
+  id: number;
 }
