@@ -13,5 +13,9 @@ export class FarmerWelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
  
-
+logout(){
+  sessionStorage.removeItem('farmerId');
+  sessionStorage.removeItem('farmerName');
+  this.router.navigate(['app-login']);
+}
 }

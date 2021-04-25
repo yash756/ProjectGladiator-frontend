@@ -18,6 +18,11 @@ import { AdminCropRequestComponent } from './admin-crop-request/admin-crop-reque
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { ClaimComponent } from './claim/claim.component';
+import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin-approve-sold-crops.component';
+
+import { ApproveClaimComponent } from "./approve-claim/approve-claim.component";
+import { BiddercheckstatusComponent } from "./biddercheckstatus/biddercheckstatus.component";
+import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -39,7 +44,12 @@ const routes: Routes = [
   {path:'app-bidder-registration', component: BidderRegistrationComponent},
   {path:'app-bidder-login', component : BidderLoginComponent},
   {path:'app-bidder-welcome', component: BidderWelcomeComponent},
-  {path:'app-claim', component: ClaimComponent}
+  {path:'app-claim', component: ClaimComponent},
+  {path:'app-admin-approve-sold-crops', component : AdminApproveSoldCropsComponent},
+  {path:'app-bidder-market-place', component: BidderMarketPlaceComponent},
+  {path:'app-approve-claim', component: ApproveClaimComponent},
+  {path:'app-biddercheckstatus', component: BiddercheckstatusComponent},
+  {path:'app-farmer-crops-sold', component : FarmerCropsSoldComponent}
 ];
 
 @NgModule({

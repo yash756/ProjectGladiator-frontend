@@ -32,6 +32,12 @@ export class FarmerService {
     let url = "http://localhost:8182/fetchFarmerMarketPlace?id="+id;
     return this.http.get(url);
   }
+
+  // Farmer's view sold crops 
+  viewSoldCrops(farmerId) : Observable<any> {
+    let url = "http://localhost:8182/farmerSoldCrops?farmerId="+farmerId;
+    return this.http.get(url);
+  }
 }
 
 

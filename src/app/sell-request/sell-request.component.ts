@@ -16,13 +16,16 @@ export class SellRequestComponent implements OnInit {
   constructor(private service: RequestCropService,private router: Router) { }
 
   ngOnInit(): void {
+    
   }
 
   register(f: NgForm) {
     this.crop.farmer.id = parseInt(sessionStorage.getItem('farmerId')) ;
+    
     this.service.requestCrop(this.crop).subscribe(data =>{
       alert(JSON.stringify(data));
       console.log(JSON.stringify(data));
+
       this.message = data['message'];
       
       this.router.navigate(['app-farmer-welcome']);

@@ -1,0 +1,18 @@
+<div class="space">
+        <table class="table" style="text-align: center;">
+            <thead>
+                <tr><th>Claim ID</th> <th>Insurance Company</th> <th>Name</th> <th>Sum Insured</th> <th>Cause</th> <th>Loss Date</th></tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of sample">
+                    <td>{{i.id}}</td>
+                    <td>{{i.insuranceCompany}}</td>
+                    <td>{{i.insureeName}}</td>
+                    <td>{{i.sumInsured}}</td>
+                    <td>{{i.cause}}</td>
+                    <td>{{i.lossDate}}</td>
+                    <button class="btn btn-success">Approve</button>
+                </tr>
+            </tbody>
+        </table>
+</div>

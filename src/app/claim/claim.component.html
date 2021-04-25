@@ -1,15 +1,20 @@
 <div class="main">
 
     <div class="start">
-        <div class="inner">
+        <div>
             <h2 align="centre">Claim Insurance</h2>
         </div>
-        <form #form1="ngForm">
+        <form #form2="ngForm">
             <div align="center"  class="container1">
+                <div *ngIf="sample">
+                    <p>Policy Number     : {{sample.policyNo}}</p>
+                    <p>Insurance Company : {{sample.insuranceCompany}}</p>
+                    <p>Sum Insured       : {{sample.sumInsured}}</p>
+                </div>
                 <div class="input1">
                     <label><b>Cause Of Loss : </b></label>
                     <input class="t1" name="cause" type="text" required [(ngModel)]="claim.cause" #cause="ngModel"><br/>
-                    <div *ngIf="form1.submitted && cause.invalid">
+                    <div *ngIf="form2.submitted && cause.invalid">
                         <div class="error" *ngIf="cause.errors.required">
                             Proper cause required for claiming
                         </div>
@@ -17,13 +22,13 @@
 
                     <label><b>Loss Date(approximate) : </b></label>
                     <input class="t1" name="lossDate" type="date" required [(ngModel)]="claim.lossDate" #lossDate="ngModel"><br/>
-                    <div *ngIf="form1.submitted && lossDate.invalid">
+                    <div *ngIf="form2.submitted && lossDate.invalid">
                         Proper date is required
                     </div>
                 </div>
 
                 <div class="button1">
-                    <button type="submit" class="request" (click)="claiming(form1)">submit for approval</button>
+                    <button type="submit" class="request" (click)="claiming(form2)">submit for approval</button>
                 </div>
             </div> 
         </form>
