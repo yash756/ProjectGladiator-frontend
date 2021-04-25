@@ -19,6 +19,7 @@ export class AdminApproveSoldCropsComponent implements OnInit {
 }
 
   ngOnInit(): void {
+    
   }
 
   market : MarketPlace;
@@ -44,6 +45,7 @@ export class MarketPlace {
     startTime: Date
     endTime: Date;
     status: string;
+    maxBid: number;
     request: Request = new Request();
 }
 

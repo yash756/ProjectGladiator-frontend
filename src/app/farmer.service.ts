@@ -38,6 +38,11 @@ export class FarmerService {
     let url = "http://localhost:8182/farmerSoldCrops?farmerId="+farmerId;
     return this.http.get(url);
   }
+
+  picUpload(formData: FormData) : Observable<any> {
+    let url = "http://localhost:8181/pic-upload";
+   return this.http.post(url, formData); 
+  }
 }
 
 
