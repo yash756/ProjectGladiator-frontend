@@ -1,6 +1,7 @@
 <div class="content" style="position: absolute; top: 30%; left: 30%;" >
     <h2>Market Place</h2>
     <table class="table">
+     
       <thead>
         <tr>
           <!-- <th scope="col">Sr.No</th> -->
@@ -10,6 +11,8 @@
           <th scope="col">basePrice</th>
           <th scope="col">status</th>
           <th scope="col">quantity</th>
+          <th scope="col">Max Bid</th>
+
           <!-- <th scope="col">maxBid</th> -->
          
         </tr>
@@ -24,6 +27,8 @@
           <td>{{ i.basePrice }}</td>
           <td>{{ i.status }}</td>
           <td>{{ i.quantity }}</td>
+          <td>{{i.maxBid}}</td>          
+
         </tr>
       </tbody>
     </table>
