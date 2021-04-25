@@ -19,11 +19,12 @@ export class SellRequestComponent implements OnInit {
   }
 
   register(f: NgForm) {
+    this.crop.farmer.id = parseInt(sessionStorage.getItem('farmerId')) ;
     this.service.requestCrop(this.crop).subscribe(data =>{
       alert(JSON.stringify(data));
       console.log(JSON.stringify(data));
       this.message = data['message'];
-      this.crop.farmer.id = parseInt(sessionStorage.getItem('farmerId')) ;
+      
       this.router.navigate(['app-farmer-welcome']);
      })
 

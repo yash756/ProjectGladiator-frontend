@@ -29,7 +29,7 @@ export class FarmerService {
   // }
 
   viewMarketPlace(id) : Observable<object> {
-    let url = "http://localhost:8182/registerFarmer.lti";
+    let url = "http://localhost:8182/fetchFarmerMarketPlace?id="+id;
     return this.http.get(url);
   }
 }

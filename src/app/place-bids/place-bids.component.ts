@@ -1,3 +1,4 @@
+import { DatePipe, formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BidderService } from '../bidder.service';
@@ -20,25 +21,51 @@ constructor(private service:BidderService,private router: Router){}
   //   );
   // }
 
-  marketPlace: MarketPlace;
+  marketPlace: MarketPlace = new MarketPlace();
+  bidder: Bidder = new Bidder();
 
   itemNo:any;
   bidderId:any;
   ngOnInit(): void {
    this.itemNo = sessionStorage.getItem('itemNo');
    this.bidderId= sessionStorage.getItem('bidderId');
+
+   this.service.fetchCropFromMarketPlace(this.itemNo).subscribe(data =>{
+     alert(JSON.stringify(data,null,2));
+     this.marketPlace=data;
+   })
   }
+  // this.service.placebids(this.itemNo,this.bidderId).subscribe(data =>{
+  //   alert(JSON.stringify(data,null,2));
+  //   this.marketPlace=data;
+  // })
+  // }
   sample: any;
+  // myDate = new Date();
 
   bid:Bid = new Bid();
 
+
   placeBidAgain(){
-    this.service.placebids(this.itemNo,this.bidderId).subscribe(data => {
+
+    // console.log("hello");
+    this.bid.basePrice=this.marketPlace['basePrice'];
+    // this.bid.dateOfBid= this.myDate.toDateString;
+    // this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
+    this.bid.bidder.bidderId= parseInt(sessionStorage.getItem('bidderId'));
+    this.bid.marketPlace.itemNo=parseInt(sessionStorage.getItem('itemNo'));
+    console.log(this.bid);
+   
+    this.service.placebids(this.bid).subscribe(data => {
       alert(JSON.stringify(data, null, 2));
       this.sample = data;
+     
       //form1.resetForm();
     })
+  
+
   }
+
 
 
 
@@ -46,14 +73,23 @@ constructor(private service:BidderService,private router: Router){}
 
 export class MarketPlace {
   itemNo : number;
+  quantity : number;
+  maxBid: number;
   cropName :String;
   cropType :String;
   basePrice: number;
   status: String;
-  quantity: number;
 }
+
+export class Bidder{
+  bidderId: number;
+ }
  
  export class Bid{
-   bidAmount : number;
-   quantity : number;
+
+   basePrice: number;
+   bidAmount: number;
+   dateOfBid : Date;
+   marketPlace: MarketPlace= new MarketPlace();
+   bidder: Bidder = new Bidder();
  }
