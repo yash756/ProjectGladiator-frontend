@@ -13,7 +13,7 @@ export class FarmerWelcomeComponent implements OnInit {
     this.farmer.id = parseInt(sessionStorage.getItem('farmerId'));
     this.service.viewNotification(this.farmer).subscribe(data => {
       //alert(JSON.stringify(data, null, 2));
-      alert(data['content']);
+      alert(data['message']);
     })
   }
 

@@ -1,9 +1,10 @@
 <div class="main">
 
-<div class="start">
+<div class="form-style-8">
     <div class="inner">
         <h2 align="center">Apply for Insurance</h2>
     </div>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <form #form1="ngForm">
         <div align="center" class="container1">
             <div class="input1">
@@ -40,7 +41,7 @@
                 </div>
 
                 <div class="button1">
-                    <button type="submit" class="request" (click)="calculate(form1)">Calculate</button>
+                    <button type="submit" class="request" (click)="calculate(form1)">Calculate</button> &nbsp;&nbsp;
                     <button type="submit" class="request" (click)="apply(form1)">Apply for Insurance</button>
                 </div>
 
@@ -52,7 +53,8 @@
     <!--<div *ngFor="let sample of sample | keyvalue">
         <pre><b>{{ sample.key }}</b>  -  {{ sample.value }}</pre>
     </div>-->
-
+    <br />
+    
     <table class="table">
         <thead>
             <tr><th>Season</th> <th>Area(in hec.)</th> <th>Premium(farmer)</th> <th>Premium(Govt)</th> <th>Crop</th> <th>Sum Insured</th></tr>

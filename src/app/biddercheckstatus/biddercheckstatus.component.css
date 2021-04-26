@@ -9,6 +9,8 @@ table, td, th {
   table {
     width: 100%;
     border-collapse: collapse;
+    margin-left: 5%;
+    margin-right: 55%;
   }
 
   .button {

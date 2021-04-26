@@ -2,6 +2,7 @@
     <div class="space"></div>
     <div id="form">
         <form>
+            <h3 style="text-align: center;">Bidder Login</h3>
             <label ><b>Email id</b></label> <br/>
             <input  id="emailid" name="email" class="inputText" required email [(ngModel)]="login.email"  /><br/><br/>
 
@@ -10,6 +11,10 @@
                 
             <button (click)='loginCheck()'>Login</button>
      
+            <p>
+                <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-bidder-registration'">New User ?....Register Here</a>
+            </p><br>
+
        </form> 
 
    

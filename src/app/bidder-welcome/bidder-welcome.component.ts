@@ -14,6 +14,14 @@ export class BidderWelcomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  logout(){
+    sessionStorage.removeItem('bidderId');
+    sessionStorage.removeItem('bidderName');
+    this.router.navigate(['app-bidder-login']);
+    }
+  
+
 //   viewMarket(bidderId:any){
 //     this.router.navigateByUrl("/app-bidder-market-place");
 //     sessionStorage.setItem('bidderId',bidderId);

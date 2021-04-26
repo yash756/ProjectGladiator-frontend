@@ -1,14 +1,15 @@
 <div class="space">
-    
+    <span style="float:right ;">
+        <button class="request" (click)=logout()>Logout</button>
+    </span>
 </div>
-<div style="float:right ;">
-    <button class="request" (click)=logout()>Logout</button>
-</div>
+
 <div class="contain">
-    <img  src="../../assets/homeImages/new4.jpg"   style="height:800px;width:1500px;">
+    
+    <img  src="../../assets/homeImages/new4.jpg"   style="height:910px;width:1500px;">
     <div class="container2">
-       
-      
+        
+        <div class="innerspace"></div>
         <h2>Welcome Farmer</h2>
         <br>
         <div class="border">
@@ -20,6 +21,9 @@
                 <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-farmer-crops-sold'">View Sold Crop History</a>
             </p><br>
             <p>
+                <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-farmer-crops-unsold'">View UnSold Crop History</a>
+            </p><br>
+            <p>
                 <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-farmer-market-place'">View Marketplace</a>
             </p><br>
             <p>
@@ -28,9 +32,7 @@
             <p>
                 <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-claim'">Claim Insurance</a>
             </p><br>
-            <p>
-                <a style="color:#26269c;font-size:25px;" [routerLink]="'/app-pic-upload'">Pic Upload</a>
-            </p><br>
+          
         </div>
     
 </div>

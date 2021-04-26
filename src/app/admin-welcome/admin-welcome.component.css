@@ -10,7 +10,7 @@ body{
     border-radius: 2%;
     padding: 2rem;
     margin: 2rem;
-    margin-top:5px;
+    margin-top:1px;
     position:absolute;
 }
 
@@ -48,6 +48,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 .border{
@@ -59,17 +60,23 @@ img{
 
 }
 
-/* .container{
-    background-color: lightgrey; 
-    outline: 2px solid;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 450px;
-    width: 1370px;
-    margin-left: 6em;
-    margin-top: 50;
-    padding-top: 20px;
-    text-align: center;
-} */
+.space{
+    padding-top: 3.5%;
+}
 
+.request {
+    background-color:#99ff25;
+    color:black;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    }
+    .request:hover {
+    opacity: 1;
+    }
 
+    .innerspace{
+        padding-top: 25%;
+    }

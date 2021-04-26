@@ -34,6 +34,14 @@ export class AdminApproveSoldCropsComponent implements OnInit {
     })
   }
 
+  disapprove(itemNo){
+    this.service.approveCropAsUnsold(itemNo).subscribe(data => {
+    alert(JSON.stringify(data,null,2));
+    console.log(JSON.stringify(data));
+    this.message = data['message'];
+  })
+}
+
 }
 
 export class MarketPlace {

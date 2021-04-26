@@ -3,13 +3,23 @@
     padding-top: 10%;
 }
 
+
+
 table, td, th {
     border: 1px solid black;
+    text-align: center;
+    height: 60px
   }
   
   table {
-    width: 100%;
+    text-align: center;
+    width: 80%;
     border-collapse: collapse;
+    margin-left: 8%;
+  }
+
+  h2{
+    margin-left: 8%;
   }
 
   .button {
@@ -59,9 +69,11 @@ table, td, th {
   margin-top: 10%;
   text-align: center;
 }
-.input1{
-  margin-top:10px;
-  margin-left: 40px;
+.input{
+  text-align: center;
+ float: inline-end;
+ padding-top: 2%;
+ height: 30%;
 }
 .input2{
  margin-left: 40px;
@@ -82,6 +94,8 @@ table, td, th {
 .t4{
  margin-left: 25px;
  margin-top: 7px;
+ height: 40px;
+ text-align: center;
 }
 .t5{
  margin-left: 20px;
@@ -103,6 +117,8 @@ table, td, th {
 }
 
 .request {
+  margin-left: 25px;
+ margin-top: 7px;
 background-color:#99ff25;
 color:black;
 font-size: 20px;
@@ -117,4 +133,8 @@ opacity: 1;
 
 .error{
   color: red;
+}
+
+.button-css{
+  text-align: center;
 }
