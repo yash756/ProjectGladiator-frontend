@@ -23,6 +23,7 @@ import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin
 import { ApproveClaimComponent } from "./approve-claim/approve-claim.component";
 import { BiddercheckstatusComponent } from "./biddercheckstatus/biddercheckstatus.component";
 import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.component';
+import { PicUploadComponent } from './pic-upload/pic-upload.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -49,7 +50,8 @@ const routes: Routes = [
   {path:'app-bidder-market-place', component: BidderMarketPlaceComponent},
   {path:'app-approve-claim', component: ApproveClaimComponent},
   {path:'app-biddercheckstatus', component: BiddercheckstatusComponent},
-  {path:'app-farmer-crops-sold', component : FarmerCropsSoldComponent}
+  {path:'app-farmer-crops-sold', component : FarmerCropsSoldComponent},
+  {path:'app-pic-upload', component : PicUploadComponent}
 ];
 
 @NgModule({

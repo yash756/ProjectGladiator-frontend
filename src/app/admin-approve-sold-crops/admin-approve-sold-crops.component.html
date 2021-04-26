@@ -12,6 +12,7 @@
         <th>Start Time</th> 
         <th>End Time</th>
         <th>Status </th>
+        <th>Max Bid</th>
     </tr>
     </thead>
 <tbody>
@@ -25,6 +26,7 @@
         <td>{{i.startTime}}</td>
         <td>{{i.endTime}}</td>
         <td>{{i.status}}</td>
+        <td>{{i.maxBid}}</td>
         <!--<td>{{i.farmerId}}</td> -->
         <button class="btn btn-success" (click)="approve(i.itemNo)">Approve</button>
     </tr>

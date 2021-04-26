@@ -30,6 +30,7 @@ import { AdminApproveSoldCropsComponent } from './admin-approve-sold-crops/admin
 import { FarmerCropsSoldComponent } from './farmer-crops-sold/farmer-crops-sold.component';
 import { ApproveClaimComponent } from './approve-claim/approve-claim.component';
 import { BiddercheckstatusComponent } from './biddercheckstatus/biddercheckstatus.component';
+import { PicUploadComponent } from './pic-upload/pic-upload.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { BiddercheckstatusComponent } from './biddercheckstatus/biddercheckstatu
     FarmerCropsSoldComponent,
     ClaimComponent,
     ApproveClaimComponent,
-    BiddercheckstatusComponent
+    BiddercheckstatusComponent,
+    PicUploadComponent
   ],
   imports: [
     BrowserModule,
