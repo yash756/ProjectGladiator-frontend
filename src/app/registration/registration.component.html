@@ -1,6 +1,6 @@
 <form #regForm="ngForm"  (ngSubmit)=" register(regForm)">
   <div class="top"></div>
-    <div class="container">
+    <div  class="container" style="text-align: center;">
         <h3 style="text-align: center;">Farmer Registration</h3> <br />
         <h4>Personal Details</h4>
         <label  for="uname"><b>Full Name  </b></label>
@@ -8,14 +8,14 @@
         
         <label  for="contact"><b>Contact Number  </b></label>
         <input class="f2" type="number" placeholder="Enter Contact" name="contact"  [(ngModel)]=farmer.contact #contact="ngModel"><br/>
-
+ 
         <label for="email"><b>Email id  </b></label>
         <input class="f3"  type="email" placeholder="Enter Email @abc.com" name="email"  [(ngModel)]=farmer.email #email="ngModel"><br/>
-
+ 
         <div class="d1">Address Details</div>
         <input class="a1" type="text" placeholder="Address" name="address"  [(ngModel)]=farmer.address #line1="ngModel"><br/>
         <!-- <input class="a1" type="text" placeholder="Line 2" name="addressLine2"  [(ngModel)]=farmer.addressLine2 #line2="ngModel"><br/> -->
-
+ 
         <label for="state"><b>State </b></label> 
         <input class="a2" type="text" name="state"  [(ngModel)]=farmer.state #state="ngModel" ><br/>
        
@@ -49,4 +49,3 @@
        -->
        <div class="space"></div>     
        <button type="submit">register</button>
-    

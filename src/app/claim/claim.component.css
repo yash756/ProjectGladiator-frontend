@@ -1,5 +1,5 @@
 .t1{
-    width: 100%;
+    width: 60%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -7,6 +7,19 @@
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    margin-left: 60px;
+    
+}
+.t2{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    
 }
 
 .main{
@@ -15,11 +28,25 @@
     padding: 20px;
 }
 
-.button1{
+button{
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 15%;
 }
+
+.space{
+    padding-top: 15%;
+}
+
+h2{
+    margin-left: 45%;
+}
+
+.start{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
