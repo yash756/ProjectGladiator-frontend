@@ -1,4 +1,4 @@
-<div class="content" style="position: absolute; top: 30%; left: 30%;" >
+<div class="content">
     <h2>Place bids</h2>
     <table class="table">
       <thead>
@@ -29,12 +29,12 @@
         </tr>
       </tbody>
     </table>
-     <input class="t4" name="bidAmount" placeholder=" enter bidding amount" type="number"required [(ngModel)]=bid.bidAmount #bidAmount="ngModel" ><br/>
+     <input class="input" name="bidAmount" placeholder=" enter bidding amount" type="number"required [(ngModel)]=bid.bidAmount #bidAmount="ngModel" ><br/>
       <!-- <div *ngIf="form1.submitted && quantity.invalid">
                 <div class="error" *ngIf="quantity.errors.required">
                          Quantity is required.
                 </div>
           </div> -->
   
-     <button class="btn btn-success" (click)="placeBidAgain()">Amount</button> 
+     <button class="button" (click)="placeBidAgain()">Amount</button> 
   </div> 

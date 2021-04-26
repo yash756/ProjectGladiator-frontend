@@ -1,5 +1,5 @@
-
-<div class="content" style="position: absolute; top: 30%; left: 30%;" >
+<div class="space"></div>
+<div class="content" >
     <h2>Market Place</h2>
     <table class="table">
       <thead>
@@ -11,7 +11,7 @@
           <th scope="col">basePrice</th>
           <th scope="col">status</th>
           <th scope="col">quantity</th>
-          <th scope="col">maxBid</th>
+          <!-- <th scope="col">maxBid</th> -->
         </tr>
       </thead>
       <tbody>
@@ -26,7 +26,7 @@
           <td>{{ i.quantity }}</td>
           <!-- <td>{{ i.maxBid }}</td> -->
           
-          <button class="btn btn-success" (click)="placeBid(i.itemNo)">Place Bid</button>
+          <button class="button" (click)="placeBid(i.itemNo)">Place Bid</button>
           <!-- <td>{{ i.maxBid }}</td> -->
         </tr>
       </tbody>

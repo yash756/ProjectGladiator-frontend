@@ -8,7 +8,7 @@
           <div align="center" class="container1">
               <div class="input1">
               <label  for="name"><b>Crop name :</b></label>
-              <input class="t1" name="name" placeholder=" crop name"  type="text" required  [(ngModel)]=crop.cropName #name="ngModel"><br/>
+              <input class="input" name="name" placeholder=" crop name"  type="text" required  [(ngModel)]=crop.cropName #name="ngModel"><br/>
               
               <div *ngIf="form1.submitted && name.invalid">
                 <div class="error" *ngIf="name.errors.required">
@@ -17,7 +17,7 @@
               </div>
   
               <label  for="cropType"><b>Crop Type :</b></label>
-              <input class="t2" name="cropType" placeholder=" crop type" type="text" required [(ngModel)]=crop.cropType #cropType="ngModel"><br/>
+              <input class="input" name="cropType" placeholder=" crop type" type="text" required [(ngModel)]=crop.cropType #cropType="ngModel"><br/>
       
               <div *ngIf="form1.submitted && cropType.invalid">
                 <div class="error" *ngIf="cropType.errors.required">
@@ -27,7 +27,7 @@
   
   
               <label  for="fertilizerType"><b>Fertilizer Type :</b></label>
-              <input class="t3" name="fertilizerType" placeholder=" fertilizer type" type="text" required [(ngModel)]=crop.fertilizerType #fertilizerType="ngModel" ><br/>
+              <input class="input" name="fertilizerType" placeholder=" fertilizer type" type="text" required [(ngModel)]=crop.fertilizerType #fertilizerType="ngModel" ><br/>
   
               <div *ngIf="form1.submitted && fertilizerType.invalid">
                 <div class="error" *ngIf="fertilizerType.errors.required">
@@ -37,7 +37,7 @@
   
   
               <label  for="quantity"><b>Quantity  :</b></label>
-              <input class="t4" name="quantity" placeholder=" enter quantity" type="number"required [(ngModel)]=crop.quantity #quantity="ngModel" ><br/>
+              <input class="input" name="quantity" placeholder=" enter quantity" type="number"required [(ngModel)]=crop.quantity #quantity="ngModel" ><br/>
               
   
               <div *ngIf="form1.submitted && quantity.invalid">
@@ -48,7 +48,7 @@
   
              
               <label  for="basePrice"><b>base Price :</b></label>
-              <input class="t5" name="basePrice" placeholder=" crop name" type="number" required [(ngModel)]=crop.basePrice #basePrice="ngModel"><br/>
+              <input class="input" name="basePrice" placeholder=" crop name" type="number" required [(ngModel)]=crop.basePrice #basePrice="ngModel"><br/>
   
               <div *ngIf="form1.submitted && basePrice.invalid">
                 <div class="error" *ngIf="basePrice.errors.required">
@@ -75,7 +75,7 @@
               </div> -->
 
               <label  for="bidCuttOffTime"> <b>Bid Cutt Off Timee :</b></label>
-              <input class="t6" name="bidCuttOffTime"  type="number" required [(ngModel)]=crop.bidCutoffTime #bidCuttOffTime="ngModel"><br/>
+              <input class="input" name="bidCuttOffTime"  type="number" required [(ngModel)]=crop.bidCutoffTime #bidCuttOffTime="ngModel"><br/>
   
               <div *ngIf="form1.submitted && bidCuttOffTime.invalid">
                 <div class="error" *ngIf="bidCutoffTime.errors.required">
@@ -86,7 +86,7 @@
           
           <div class="input2">
             <label  for="soilPH"><b>Soil PH :</b></label>
-            <input class="t8" name="soilPH" type="number" step="0.01" required [(ngModel)]=crop.soilPh #soilPh="ngModel">
+            <input class="input" name="soilPH" type="number" step="0.01" required [(ngModel)]=crop.soilPh #soilPh="ngModel">
           
   
           <div *ngIf="form1.submitted && soilPh.invalid">
