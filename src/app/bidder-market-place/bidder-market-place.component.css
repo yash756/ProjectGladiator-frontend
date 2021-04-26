@@ -11,6 +11,11 @@ table, td, th {
   border-bottom: 1px solid #ddd;
   }
   
+}
+ 
+th{
+  height: 30px;
+}
   table {
     border-collapse: collapse;
     width: 100%;

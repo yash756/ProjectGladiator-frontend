@@ -77,6 +77,10 @@ img{
     opacity: 1;
     }
 
+    .innerspace{
+        padding-top: 25%;
+    }
+
 /* .topcorner{
     position: absolute;
     top: 10;

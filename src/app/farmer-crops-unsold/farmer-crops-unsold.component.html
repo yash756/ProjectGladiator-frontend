@@ -1,0 +1,60 @@
+<div class="space">
+
+</div>
+<table class="table" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>Item No</th> 
+            <th>Crop Name</th>
+            <th>Crop Type</th>
+            <th>Status</th>
+            <th>Quantity</th> 
+            <th>Base Price</th> 
+            <th>Start Time</th> 
+            <th>End Time</th> 
+            <th>Max Bid</th>
+            
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let i of sample">
+        
+        <td>{{i.itemNo}}</td>
+        <td>{{i.cropName}}</td>
+        <td>{{i.cropType}}</td>
+        <td>{{i.status}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.basePrice}}</td>
+        <td>{{i.startTime}}</td>
+        <td>{{i.endTime}}</td>
+        <td>{{i.maxBid}}</td>
+       
+    </tr>
+</tbody>    
+</table>
+
+<!-- <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Item No</div>
+      <div class="col col-2">Crop Name</div>
+      <div class="col col-3">Crop Type</div>
+      <div class="col col-4">Status</div>
+      <div class="col col-5">Quantity</div>
+      <div class="col col-6">Base Price</div>
+      <div class="col col-7">Start Time</div>
+      <div class="col col-8">End Time</div>
+      <div class="col col-9">Max Bid</div>
+    </li>
+    
+    <li class="table-row" *ngFor="let i of sample">
+      <div class="col col-1" data-label="Item NO">{{i.itemNo}}</div>
+      <div class="col col-2" data-label="Crop Name">{{i.cropName}}</div>
+      <div class="col col-3" data-label="Crop Type">{{i.cropType}}</div>
+      <div class="col col-4" data-label="Status">{{i.status}}</div>
+      <div class="col col-5" data-label="Quantity">{{i.quantity}}</div>
+      <div class="col col-6" data-label="Base Price">{{i.basePrice}}</div>
+      <div class="col col-7" data-label="Start Time">{{i.startTime}}</div>
+      <div class="col col-8" data-label="End Time">{{i.endTime}}</div>
+      <div class="col col-9" data-label="Max Bid">{{i.maxBid}}</div>
+    </li>
+</ul>     -->

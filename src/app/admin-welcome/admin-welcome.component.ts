@@ -13,4 +13,10 @@ export class AdminWelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  logout(){
+    sessionStorage.removeItem('loggedInUsername');
+    
+    this.router.navigate(['app-admin-login']);
+    }
+
 }

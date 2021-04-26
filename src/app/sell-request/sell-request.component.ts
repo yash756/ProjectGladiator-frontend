@@ -20,16 +20,21 @@ export class SellRequestComponent implements OnInit {
   }
 
   register(f: NgForm) {
-    this.crop.farmer.id = parseInt(sessionStorage.getItem('farmerId')) ;
-    
-    this.service.requestCrop(this.crop).subscribe(data =>{
-      alert(JSON.stringify(data));
-      console.log(JSON.stringify(data));
-
-      this.message = data['message'];
+    if(f.valid){
+      this.crop.farmer.id = parseInt(sessionStorage.getItem('farmerId')) ;
       
-      this.router.navigate(['app-farmer-welcome']);
-     })
+      this.service.requestCrop(this.crop).subscribe(data =>{
+        alert(JSON.stringify(data));
+        console.log(JSON.stringify(data));
+
+        this.message = data['message'];
+        
+        this.router.navigate(['app-farmer-welcome']);
+      })
+    } 
+    else{
+      alert("Please fix all the errors in the form and submit again")  
+    }
 
 }
 

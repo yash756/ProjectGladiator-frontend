@@ -40,6 +40,11 @@ export class FarmerService {
     return this.http.get(url);
   }
 
+  viewUnSoldCrops(farmerId) : Observable<any> {
+    let url = "http://localhost:8182/farmerUnSoldCrops?farmerId="+farmerId;
+    return this.http.get(url);
+  }
+
   picUpload(formData: FormData) : Observable<any> {
     let url = "http://localhost:8181/pic-upload";
    return this.http.post(url, formData); 

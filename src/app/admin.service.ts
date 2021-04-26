@@ -30,4 +30,9 @@ export class AdminService {
     let url = "http://localhost:8182/approveAsSold?itemNo="+itemNo;
     return this.http.get(url);
   }
+
+  approveCropAsUnsold(itemNo) : Observable<any> {
+    let url = "http://localhost:8182/approveAsUnsold?itemNo="+itemNo;
+    return this.http.get(url);
+  }
 }

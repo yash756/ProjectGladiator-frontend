@@ -28,7 +28,8 @@
         <td>{{i.status}}</td>
         <td>{{i.maxBid}}</td>
         <!--<td>{{i.farmerId}}</td> -->
-        <button class="button" (click)="approve(i.itemNo)">Approve</button>
+        <button class="request" (click)="approve(i.itemNo)">Approve</button> &nbsp;&nbsp;
+        <button class="request" (click)="disapprove(i.itemNo)">Disapprove </button>
     </tr>
 </tbody>    
 </table>
