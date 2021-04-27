@@ -23,7 +23,7 @@ export class InsuranceComponent implements OnInit {
 
   calculate(f:NgForm) {
     this.service.calculateInsurance(this.insurance).subscribe(data => {
-      alert(JSON.stringify(data, null, 2));
+      //alert(JSON.stringify(data, null, 2));
       console.log(JSON.stringify(data));
       this.insurance.farmer.id = parseInt(sessionStorage.getItem('farmerId'));
       this.sample = data;
@@ -36,7 +36,7 @@ export class InsuranceComponent implements OnInit {
   apply(f:NgForm) {
     this.insurance.farmer.id = parseInt(sessionStorage.getItem('farmerId'));
     this.service.applyInsurance(this.insurance).subscribe(data => {
-      alert(JSON.stringify(data, null,2));
+      //alert(JSON.stringify(data, null,2));
       console.log(JSON.stringify(data));
     
       //let policyNo = data.appliedInsuranceId;

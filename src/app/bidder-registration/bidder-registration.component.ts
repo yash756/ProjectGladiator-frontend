@@ -17,7 +17,7 @@ export class BidderRegistrationComponent  {
 
  register(f:NgForm ){
    this.service.registerBidder(this.bidder).subscribe(data =>{
-    alert(JSON.stringify(data));
+    //alert(JSON.stringify(data));
     console.log(JSON.stringify(data));
     this.message = data['message'];
     this.router.navigate(['app-bidder-login']);

@@ -50,7 +50,7 @@ export class LoginComponent {
          
       console.log(this.login);
       this.farmerService.login(this.login).subscribe(response => {
-        alert(JSON.stringify(response));
+        //alert(JSON.stringify(response));
         console.log(response);
         if(response.status == true) {
           let farmerId = response.farmerId;

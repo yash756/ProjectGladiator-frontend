@@ -11,7 +11,7 @@ export class BiddercheckstatusComponent implements OnInit {
   constructor(private service: BiddercheckstatusService) { 
     this.bidder.bidderId = parseInt(sessionStorage.getItem('bidderId'));
     this.service.viewStatus(this.bidder).subscribe(data => {
-      alert(JSON.stringify(data, null, 2));
+      //alert(JSON.stringify(data, null, 2));
       this.sample = data;
     })
   }

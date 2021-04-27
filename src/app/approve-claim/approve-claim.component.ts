@@ -10,7 +10,7 @@ export class ApproveClaimComponent implements OnInit {
 
   constructor(private service: ApproveClaimService) { 
     this.service.viewClaims(this.claims).subscribe(data => {
-      alert(JSON.stringify(data, null, 2));
+      //alert(JSON.stringify(data, null, 2));
       this.sample = data; //do routing before testing
     })
    }

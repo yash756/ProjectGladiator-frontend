@@ -31,7 +31,7 @@ constructor(private service:BidderService,private router: Router){}
    this.bidderId= sessionStorage.getItem('bidderId');
 
    this.service.fetchCropFromMarketPlace(this.itemNo).subscribe(data =>{
-     alert(JSON.stringify(data,null,2));
+     //alert(JSON.stringify(data,null,2));
      this.marketPlace=data;
    })
   }
@@ -57,7 +57,7 @@ constructor(private service:BidderService,private router: Router){}
     console.log(this.bid);
    
     this.service.placebids(this.bid).subscribe(data => {
-      alert(JSON.stringify(data, null, 2));
+      alert(JSON.stringify(data['message']));
       this.sample = data;
      
       //form1.resetForm();

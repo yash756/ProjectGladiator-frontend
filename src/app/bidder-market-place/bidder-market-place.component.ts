@@ -18,7 +18,7 @@ import { BidderService } from '../bidder.service';
   constructor(private service:BidderService ,private router: Router) {
     this.service.viewMarketPlace(this.marketPlace).subscribe(
       fetch=>{
-        alert(JSON.stringify(fetch,null,2));
+        //alert(JSON.stringify(fetch,null,2));
         console.log(JSON.stringify(fetch));
         this.sample = fetch;
        // console.log(fetch);

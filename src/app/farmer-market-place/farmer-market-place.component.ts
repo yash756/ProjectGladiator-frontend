@@ -19,7 +19,7 @@ export class FarmerMarketPlaceComponent implements OnInit {
   constructor(private service:FarmerService,private router: Router) {
     this.service.viewMarketPlace(this.id).subscribe(
       fetch=>{
-        alert(JSON.stringify(fetch,null,2));
+        //alert(JSON.stringify(fetch,null,2));
         console.log(JSON.stringify(fetch));
         this.sample = fetch;
        // console.log(fetch);

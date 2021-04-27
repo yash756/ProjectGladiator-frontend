@@ -19,7 +19,7 @@ export class RegistrationComponent  {
 
  register(f:NgForm ){
    this.service.registerFarmer(this.farmer).subscribe(data =>{
-    alert(JSON.stringify(data));
+    //alert(JSON.stringify(data));
     console.log(JSON.stringify(data));
     this.message = data['message'];
     this.router.navigate(['app-login']);

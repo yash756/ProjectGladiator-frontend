@@ -13,7 +13,7 @@ export class FarmerCropsUnsoldComponent implements OnInit {
 
   constructor(private service: FarmerService ,private router: Router) { 
     this.service.viewUnSoldCrops(this.farmerId).subscribe(data => {
-    alert(JSON.stringify(data,null,2));
+    //alert(JSON.stringify(data,null,2));
     console.log(JSON.stringify(data));
     this.sample = data;
     //this.sample = Array.of(this.sample);
