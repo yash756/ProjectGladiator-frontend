@@ -1,53 +1,158 @@
-table, td, th {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    }
-    
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-  
-    tr:hover {background-color:#f5f5f5;}
-  
-    .t1{
-      width: 50%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-      display: inline-block;
-      
-  }
-  
-  .main{
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-  }
-  
-  .button{
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-  }
-  
-  .space{
-    padding-top: 100px;
-  }
-  
-  .start{
-    padding-left: 400px;
-    padding-right: 400px;
-  }
-  
-  .container{
-      padding-left: 10%;
-  }
+.row{
+   
+  margin:20px;
+  margin-top:5px;
+  margin-bottom:50px;
+  margin-right:100px;
+  margin-left:170px;
+  height:auto;
+  width:1000px;
+  padding-bottom: 30px;
+}
+
+input{
+    border: 2px solid green;  
+}
+
+button{
+    padding-top: 7em;
+    background-color:green;
+    color: white;
+    size:10px;
+    padding:10px;
+}
+.space{
+    padding-top: 3em;
+}
+
+.top{
+    padding-top: 5em;
+}
+
+.container{
+  margin-left: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.container h1{
+  margin-left: 30px;
+}
+.f1{
+    margin-top: 5px;
+    margin-left: 97px;
+}
+.f2{
+    margin-top: 5px;
+    margin-left: 53px;
+}
+.f3{
+    margin-top: 5px;
+    margin-left: 110px;
+}
+.doc{
+    margin-left: 110px;
+}
+.a1{
+    margin-top: 5px;
+    margin-left: 70px;
+
+}
+.a2{
+    margin-top: 5px;
+    margin-left: 130px;
+}
+.a3{
+    margin-top: 5px;
+    margin-left: 135px;
+
+}
+.a4{
+    margin-top: 5px;
+    margin-left: 140px;
+}
+.l1{
+    margin-top: 5px;
+    margin-left: 126px;
+
+}
+.l2{
+    margin-top: 5px;
+    margin-left: 105px;
+
+}
+.l3{
+    margin-top: 5px;
+    margin-left: 137px;
+
+}
+.b1{
+    margin-top: 5px;
+    margin-left: 45px;
+}
+.b2{
+    margin-top: 5px;
+    margin-left: 125px;
+
+}
+.d1{
+    margin-top: 5px;
+    margin-left: 105px;
+
+
+}
+
+.df1{
+    border: initial;
+    margin-left: 20px;
+}
+.df2{
+    border: initial;
+    margin-left: 20px;
+}
+.d2{
+    margin-top: 5px;
+    margin-left: 125px;
+    margin-bottom: 10px;
+}
+.pass1{
+    margin-top: 5px;
+    margin-left: 90px;
+
+}
+.pass2{
+    margin-top: 5px;
+    margin-left: 27px;
+
+}
+.roles{
+    margin-top:30px;
+    margin-left: 40px;
+}
+.roles input{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.button1{ 
+    margin-left: 430px;
+}
+.button2{ 
+    margin-left: 10px;
+}
+.show {display: block;}
+
+.error{
+    color: rgb(255, 0, 0);
+}
+.roles{
+  margin-top:30px;
+  margin-left: 50px;
+}
+.roles input{
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.rolebut{
+
+  margin-left:20px;
+
+}
