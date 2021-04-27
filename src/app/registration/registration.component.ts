@@ -18,16 +18,19 @@ export class RegistrationComponent  {
   message: string;
 
  register(f:NgForm ){
-   this.service.registerFarmer(this.farmer).subscribe(data =>{
-    //alert(JSON.stringify(data));
-    console.log(JSON.stringify(data));
-    this.message = data['message'];
-    this.router.navigate(['app-login']);
-   })
-  }
-
+  if(f.valid){ 
+      this.service.registerFarmer(this.farmer).subscribe(data =>{
+      //alert(JSON.stringify(data));
+      console.log(JSON.stringify(data));
+      this.message = data['message'];
+      this.router.navigate(['app-login']);
+    })
+    }
+  else{
+    alert("Please fix all the errors in the form and submit again") ;
+  } 
 }
-
+}
   export class Farmer{
 
     name: string;
