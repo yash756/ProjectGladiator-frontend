@@ -1,3 +1,4 @@
+<div class="space"></div>
 <div class="main">
 
     <div class="start">
@@ -21,13 +22,13 @@
                     </div>
 
                     <label><b>Loss Date(approximate) : </b></label>
-                    <input class="t1" name="lossDate" type="date" required [(ngModel)]="claim.lossDate" #lossDate="ngModel"><br/>
+                    <input class="t2" name="lossDate" type="date" required [(ngModel)]="claim.lossDate" #lossDate="ngModel"><br/>
                     <div *ngIf="form2.submitted && lossDate.invalid">
                         Proper date is required
                     </div>
                 </div>
 
-                <div class="button1">
+                <div>
                     <button type="submit" class="request" (click)="claiming(form2)">submit for approval</button>
                 </div>
             </div> 

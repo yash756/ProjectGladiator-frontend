@@ -1,17 +1,13 @@
-<div class="space">
-
-</div>
-  
-
-
-  <h2 >Market Place</h2> 
-    <table class="table" style="text-align: center;">
+<div class="space"></div>
+<div class="content" >
+    <h2>Market Place</h2>
+    <table class="table">
       <thead>
         <tr>
           <!-- <th scope="col">Sr.No</th> -->
           <th scope="col">Item No</th>
           <th scope="col">Crop Name</th>
-          <th scope="col">Crop Type</th>
+          <th scope="col">CropType</th>
           <th scope="col">Base Price</th>
           <th scope="col">Status</th>
           <th scope="col">Quantity</th>
@@ -30,7 +26,7 @@
           <td>{{ i.quantity }}</td>
           <!-- <td>{{ i.maxBid }}</td>  -->
           
-          <button class="request" (click)="placeBid(i.itemNo)">Place Bid</button>
+          <button class="button" (click)="placeBid(i.itemNo)">Place Bid</button>
           <!-- <td>{{ i.maxBid }}</td> -->
         </tr>
       </tbody>
